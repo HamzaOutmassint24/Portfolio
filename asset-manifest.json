@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HamzaOutmassint24/static/css/main.dd291d1d.css",
+    "main.js": "/HamzaOutmassint24/static/js/main.be8ef368.js",
+    "static/js/787.b701888c.chunk.js": "/HamzaOutmassint24/static/js/787.b701888c.chunk.js",
+    "index.html": "/HamzaOutmassint24/index.html",
+    "main.dd291d1d.css.map": "/HamzaOutmassint24/static/css/main.dd291d1d.css.map",
+    "main.be8ef368.js.map": "/HamzaOutmassint24/static/js/main.be8ef368.js.map",
+    "787.b701888c.chunk.js.map": "/HamzaOutmassint24/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd291d1d.css",
+    "static/js/main.be8ef368.js"
+  ]
+}
