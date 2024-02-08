@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600&display=swap");
+
+:root {
+    --main-color: #28e98c;
+    --second-color: #999999;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: "DM Serif Display";
+}
+
+/* 
+  ### some styles that i can't do it with tialwindCss ###
+*/
+
+.helloWorld::before {
+    content: "";
+    height: 2px;
+    width: 38px;
+    position: absolute;
+    background-color: var(--main-color);
+    top: 9.5px;
+}
+
+@keyframes rotate {
+    0% { transform: translateX(0) translateY(0) rotate(0deg); }
+    100% { transform: translateX(0) translateY(0) rotate(360deg); }
+  }
+  
+.circle-animation {
+    animation: rotate 9s infinite linear; /* Adjust animation duration and easing as needed */
+}
