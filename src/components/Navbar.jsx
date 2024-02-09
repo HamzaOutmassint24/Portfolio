@@ -7,7 +7,7 @@ export const Navbar = ({ activeSection }) => {
             <ul className="border-1 border-second-color rounded-full h-64 flex flex-col justify-between px-3 py-5">
                 <li className="group flex relative">
                     <a href="#home">
-                        <HouseDoor size={21} className={activeSection === "home" ? "text-main-color" : "text-fourth-color"} />
+                        <HouseDoor size={21} className={activeSection === "home" ? "text-main-color" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear" } />
                         <span className="hidden group-hover:block absolute left-[-480%] top-1/2 transform -translate-y-1/2 bg-therd-color font-second-font text-sm text-white px-2 py-1 rounded">
                             Home
                         </span>
