@@ -20,8 +20,10 @@ module.exports = {
             wide: "6.5px",
         },
         width: {
-            30: "10.6rem",
-            28: "10.4rem",
+            "md": "9.4rem",
+            "lg": "10.6rem",
+            "lg": "10.4rem",
+            "xl": "9.6rem"
         },
         colors: {
             "main-color": "#28E98C",
@@ -43,6 +45,24 @@ module.exports = {
                 "14.4rem" : "14.4rem",
             },
         },
+        screens: {
+            "sm": '359px',
+            // => @media (min-width: 640px) { ... }
+      
+            "md": '768px',
+            // => @media (min-width: 768px) { ... }
+      
+            "lg": '1024px',
+            // => @media (min-width: 1024px) { ... }
+      
+            "xl": '1280px',
+            // => @media (min-width: 1280px) { ... }
+      
+            "2xl": '1536px',
+            // => @media (min-width: 1536px) { ... }
+
+            "exactly-1024": { 'min': '1024px', 'max': '1024px'},
+          }
     },
     plugins: [],
 };

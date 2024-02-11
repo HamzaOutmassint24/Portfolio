@@ -3,21 +3,21 @@ import img_my_project from "../assets/round-text.png";
 
 export const IntroduceSection = () => {
     return (
-        <section className="h-screen pt-9" id="home">
+        <section className="lg:h-screen pt-9 exactly-1024:h-fit" id="home">
             <div className="flex items-center justify-center">
-                <div className="border-1 border-second-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal w-30 flex justify-between">
+                <div className="border-1 border-second-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal md:w-md lg:w-lg xl:w-xl flex justify-between">
                     <HouseDoor size={18} />
                     INTRODUCE
                 </div>
             </div>
-            <div className="mt-24 pb-5 grid grid-flow-row-dense grid-cols-3 ">
-                <div className="col-span-2">
+            <div className="mt-24 pb-5 grid grid-flow-row-dense lg:grid-cols-3 ">
+                <div className="lg:col-span-2">
                     <div className="text-[#28e98c] relative mb-4 helloWorld">
-                        <span className="pl-14 font-second-font tracking-wide">
+                        <span className="pl-14 md:text-xl font-second-font tracking-wide">
                             HELLO WORLD
                         </span>
                     </div>
-                    <h1 className="text-white text-5xl md:text-2xl lg:text-4xl not-italic font-bold max-w-xl  leading-[normal]">
+                    <h1 className="text-white md:text-5xl lg:text-5xl not-italic font-bold max-w-xl  leading-[normal]">
                         I am Hamza Outmassint, Full stack Developer.
                     </h1>
                     <div className="flex mt-4">
@@ -43,12 +43,12 @@ export const IntroduceSection = () => {
                     </div>
                 </div>
             </div>
-                <div className="relative hidden lg:block md:block" >
-                    <a href="#about-me-section">
-                    <ArrowDown size={35} className="absolute right-[15.8rem] -top-3 animate-bounce"/>
-                    <img src={img_my_project}  alt="my project icon" className="absolute right-48 circle-animation -top-20" />
-                    </a>
-                </div>
+            <div className="relative hidden lg:block" >
+                <a href="#about-me-section">
+                <ArrowDown size={35} className="absolute lg:right-[15.8rem] lg:-top-3 xl:right-[21.3rem] exactly-1024:right-[15.3rem] animate-bounce"/>
+                <img src={img_my_project}  alt="my project icon" className="absolute lg:right-48 lg:-top-20 xl:right-72  circle-animation " />
+                </a>
+            </div>
         </section>
     );
 };

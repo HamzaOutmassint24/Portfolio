@@ -3,7 +3,7 @@ import { HouseDoor, Person, MenuButton, Diagram3, FileText, Envelope } from 'rea
 export const Navbar = ({ activeSection }) => {
 
     return (
-        <nav className="hidden lg:block flex fixed top-44 right-52 items-center">
+        <nav className="hidden lg:flex fixed top-44 right-52 items-center exactly-1024:right-36">
             <ul className="border-1 border-second-color rounded-full h-64 flex flex-col justify-between px-3 py-5">
                 <li className="group flex relative">
                     <a href="#home">
