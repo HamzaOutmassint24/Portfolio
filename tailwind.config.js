@@ -20,6 +20,7 @@ module.exports = {
             wide: "6.5px",
         },
         width: {
+            "sm": "9.5rem",
             "md": "9.4rem",
             "lg": "10.6rem",
             "lg": "10.4rem",

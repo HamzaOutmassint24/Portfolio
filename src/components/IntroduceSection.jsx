@@ -5,19 +5,19 @@ export const IntroduceSection = () => {
     return (
         <section className="lg:h-screen pt-9 exactly-1024:h-fit" id="home">
             <div className="flex items-center justify-center">
-                <div className="border-1 border-second-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal md:w-md lg:w-lg xl:w-xl flex justify-between">
+                <div className="border-1 border-second-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm md:w-md lg:w-lg xl:w-xl flex justify-between">
                     <HouseDoor size={18} />
                     INTRODUCE
                 </div>
             </div>
-            <div className="mt-24 pb-5 grid grid-flow-row-dense lg:grid-cols-3 ">
+            <div className="sm:mt-12 mt-24 pb-5 grid grid-flow-row-dense lg:grid-cols-3 ">
                 <div className="lg:col-span-2">
                     <div className="text-[#28e98c] relative mb-4 helloWorld">
                         <span className="pl-14 md:text-xl font-second-font tracking-wide">
                             HELLO WORLD
                         </span>
                     </div>
-                    <h1 className="text-white md:text-5xl lg:text-5xl not-italic font-bold max-w-xl  leading-[normal]">
+                    <h1 className="text-white sm:text-5xl md:text-5xl lg:text-5xl not-italic font-bold max-w-xl  leading-[normal]">
                         I am Hamza Outmassint, Full stack Developer.
                     </h1>
                     <div className="flex mt-4">

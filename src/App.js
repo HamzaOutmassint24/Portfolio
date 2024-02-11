@@ -35,7 +35,7 @@ function App() {
     }, []);
 
     return (
-        <div className="container mx-auto scroll-smooth">
+        <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
             <Navbar activeSection={activeSection} />
             <IntroduceSection />
             <AboutMeSection />
