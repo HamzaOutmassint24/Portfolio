@@ -8,43 +8,53 @@ import { Navbar } from "./components/Navbar";
 import { useState, useEffect } from "react";
 
 function App() {
-    const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("");
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const sections = document.querySelectorAll("section");
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
 
-            let sectionId = "";
+      let sectionId = "";
 
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                if (window.scrollY >= sectionTop - 60) {
-                    sectionId = section.getAttribute("id");
-                }
-            });
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 60) {
+          sectionId = section.getAttribute("id");
+        }
+      });
 
-            setActiveSection(sectionId);
-        };
+      setActiveSection(sectionId);
+    };
 
-        window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-        // Clean up the event listener on unmount
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    return (
-        <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
-            <Navbar activeSection={activeSection} />
-            <IntroduceSection />
-            <AboutMeSection />
-            {/* <ServicesSection />
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  return (
+    <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
+      <Navbar activeSection={activeSection} scrollToSection={scrollToSection}/>
+      <IntroduceSection scrollToSection={scrollToSection}/>
+      <AboutMeSection />
+      {/* <ServicesSection />
             <SkillsSection />
             <ProjectSection />
             <ContactSection /> */}
-        </div>
-    );
+    </div>
+  );
 }
 
 export default App;
