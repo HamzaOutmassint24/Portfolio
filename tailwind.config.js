@@ -28,9 +28,6 @@ module.exports = {
       xl: "9.6rem",
       "50%":"50%",
     },
-    // height:{ 
-    //   "cirecle":"50px",
-    // },
     colors: {
       "main-color": "#28E98C",
       "second-color": "#575757",
