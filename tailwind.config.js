@@ -32,7 +32,7 @@ module.exports = {
     colors: {
       "main-color": "#28E98C",
       "second-color": "#404042",
-      "therd-color": "#bca9a9",
+      "therd-color": "#ffffffad",
       "fourth-color": "#7f7272",
       "fifth-color": "#999999",
     },

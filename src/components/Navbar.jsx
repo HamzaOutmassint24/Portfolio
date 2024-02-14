@@ -70,14 +70,14 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
         </ul>
       </nav>
       <nav className="lg:hidden sm:flex justify-end relative top-10">
-        <button onClick={() => { setOpen(!open);}} className="border-1 rounded-full">
+        <button onClick={() => { setOpen(!open);}} className="border-1 border-fourth-color rounded-full">
           <List size={50} className="p-3" />
         </button>
         <div onClick={() => { setOpen(!open); }}
           className={`fixed inset-0 bg-fifth-color opacity-20 duration-0 transition z-10 ${ open === true ? "translate-x-0" : "translate-x-full"}`}
         ></div>
         <div
-          className={`fixed inset-0 flex  bg-[#1f1f1f] duration-700 transition z-40 font-second-font text-fifth-color ${
+          className={`fixed inset-0 flex  bg-[#1f1f1f] duration-700 transition z-40 font-second-font  ${
             open === true ? "sm:translate-x-16 md:translate-x-1/2" : "translate-x-full"}`}
         >
           <ul className="mt-16 ml-24 max-h-96 flex flex-col justify-between">
