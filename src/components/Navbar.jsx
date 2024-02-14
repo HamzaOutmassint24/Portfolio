@@ -5,7 +5,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className="hidden lg:flex fixed top-44 right-52 items-center exactly-1024:right-36">
+      <nav className="hidden lg:flex fixed top-44 right-52 2xl:right-72 items-center exactly-1024:right-36">
         <ul className="border-1 border-fourth-color rounded-full h-64 flex flex-col justify-between px-3 py-5">
           <li className="group flex relative">
             <button onClick={() => scrollToSection("home")}>
@@ -70,7 +70,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
         </ul>
       </nav>
       <nav className="lg:hidden sm:flex justify-end relative top-10">
-        <button onClick={() => { setOpen(!open);}} className="border-1 border-fourth-color rounded-full">
+        <button onClick={() => { setOpen(!open);}} className="fixed bg-bg-color border-1 border-fourth-color rounded-full">
           <List size={50} className="p-3" />
         </button>
         <div onClick={() => { setOpen(!open); }}

@@ -33,6 +33,7 @@ module.exports = {
       "45%": "45%",
     },
     colors: {
+      "bg-color": "#1f1f1f",
       "main-color": "#28E98C",
       "second-color": "#404042",
       "therd-color": "#ffffffad",

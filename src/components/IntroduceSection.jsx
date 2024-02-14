@@ -3,7 +3,7 @@ import img_my_project from "../assets/round-text.png";
 
 export const IntroduceSection = ({scrollToSection}) => {
   return (
-    <section className="lg:h-screen pt-9 exactly-1024:h-fit" id="home">
+    <section className="xl:h-full lg:h-screen sm:pt-20 lg:pt-9 exactly-1024:h-fit" id="home">
       <div className="flex items-center md:justify-center sm:justify-start">
         <div className="border-1 border-fourth-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm md:w-md lg:w-lg xl:w-xl exactly-1024:w-sm flex justify-between">
           <HouseDoor size={18} />
