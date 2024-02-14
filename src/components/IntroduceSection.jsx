@@ -5,7 +5,7 @@ export const IntroduceSection = ({scrollToSection}) => {
   return (
     <section className="lg:h-screen pt-9 exactly-1024:h-fit" id="home">
       <div className="flex items-center md:justify-center sm:justify-start">
-        <div className="border-1 border-second-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm md:w-md lg:w-lg xl:w-xl exactly-1024:w-sm flex justify-between">
+        <div className="border-1 border-fourth-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm md:w-md lg:w-lg xl:w-xl exactly-1024:w-sm flex justify-between">
           <HouseDoor size={18} />
           INTRODUCE
         </div>
@@ -17,7 +17,7 @@ export const IntroduceSection = ({scrollToSection}) => {
               HELLO WORLD
             </span>
           </div>
-          <h1 className="text-white sm:text-5xl md:text-5xl lg:text-5xl not-italic font-bold max-w-xl mb-5 leading-[normal]">
+          <h1 className="font-main-font text-white sm:text-5xl md:text-5xl lg:text-5xl not-italic font-bold max-w-xl mb-5 leading-[normal]">
             I am Hamza Outmassint, Full stack Developer.
           </h1>
           <span className="font-second-font text-fifth-color sm:text-sm md:text-base">
@@ -27,7 +27,7 @@ export const IntroduceSection = ({scrollToSection}) => {
             <a
               title="github"
               href="#github account/"
-              className="h-1/2 border-3 border-second-color p-2 rounded-full mr-4 group hover:border-main-color transition duration-200 ease-linear"
+              className="h-1/2 border-3 border-fourth-color p-2 rounded-full mr-4 group hover:border-main-color transition duration-200 ease-linear"
             >
               <Github
                 size={30}
@@ -38,7 +38,7 @@ export const IntroduceSection = ({scrollToSection}) => {
             <a
               title="linkdin"
               href="#linkedin account/"
-              className="h-1/2 border-3 border-second-color group hover:border-main-color p-2 rounded-full flex items-center justify-center transition duration-200 ease-linear"
+              className="h-1/2 border-3 border-fourth-color group hover:border-main-color p-2 rounded-full flex items-center justify-center transition duration-200 ease-linear"
             >
               <Linkedin
                 size={30}

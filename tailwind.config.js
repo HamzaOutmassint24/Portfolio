@@ -14,6 +14,7 @@ module.exports = {
       "5xl": "3.600rem",
     },
     fontFamily: {
+      "main-font" : "DM Serif Display",
       "second-font": ["Public Sans", "sans-serif"],
     },
     letterSpacing: {
@@ -30,8 +31,8 @@ module.exports = {
     },
     colors: {
       "main-color": "#28E98C",
-      "second-color": "#575757",
-      "therd-color": "#404042",
+      "second-color": "#404042",
+      "therd-color": "#bca9a9",
       "fourth-color": "#7f7272",
       "fifth-color": "#999999",
     },
