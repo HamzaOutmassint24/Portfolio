@@ -7,7 +7,7 @@ module.exports = {
       sm: "13px",
       base: "1rem",
       lg: "1.625rem",
-      xl: "1.25rem",
+      xl: "1.1rem",
       "2xl": "1.563rem",
       "3xl": "1.953rem",
       "4xl": "2.441rem",
@@ -28,6 +28,8 @@ module.exports = {
       lg: "10.4rem",
       xl: "9.6rem",
       "50%":"50%",
+      "84%": "84%",
+      "45%": "45%",
     },
     colors: {
       "main-color": "#28E98C",
