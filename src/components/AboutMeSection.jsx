@@ -12,7 +12,7 @@ export const AboutMeSection = () => {
       </div>
       <div className=" mt-14 lg:w-[84%] grid grid-cols-1 lg:grid-cols-2 justify-center items-center ">
         <div className="">
-          <img src={my_photo} alt="me" loading="lazy"/>
+          <img src={my_photo} alt="me" loading="eager"/>
         </div>
         <div className="font-second-font text-xl xl:pr-10">
           <p className="mb-5">
