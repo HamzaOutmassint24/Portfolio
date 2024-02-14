@@ -17,10 +17,10 @@ export const IntroduceSection = ({scrollToSection}) => {
               HELLO WORLD
             </span>
           </div>
-          <h1 className="font-main-font text-white sm:text-5xl md:text-5xl lg:text-5xl not-italic font-bold max-w-xl mb-5 leading-[normal]">
+          <h1 className="font-main-font text-white sm:text-5xl md:text-5xl lg:text-5xl not-italic font-bold  mb-5 leading-[normal]">
             I am Hamza Outmassint, Full stack Developer.
           </h1>
-          <span className="font-second-font text-fifth-color sm:text-sm md:text-base">
+          <span className="font-second-font text-fifth-color sm:text-sm md:text-base xl:pr-10">
             Crafting code, painting pixels. Full stack, full passion. Let's build something beautiful together!
           </span>
           <div className="flex mt-4">

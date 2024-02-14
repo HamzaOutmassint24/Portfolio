@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
     --main-color: #28e98c;
@@ -15,7 +16,7 @@ body {
     height: 100vh;
     background-color: #1f1f1f;
     color: #ffffff;
-    font-family: "DM Serif Display";
+    font-family: "Playfair Display", serif;
 }
 
 /* 
@@ -24,11 +25,11 @@ body {
 
 .helloWorld::before {
     content: "";
-    height: 2px;
+    height: 1px;
     width: 38px;
     position: absolute;
     background-color: var(--main-color);
-    top: 9.5px;
+    top: 12px;
 }
 
 @keyframes rotate {
