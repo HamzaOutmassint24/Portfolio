@@ -10,15 +10,21 @@ export const AboutMeSection = () => {
           ABOUT ME
         </div>
       </div>
-      <div className="grid mt-20 lg:w-[84%] grid-flow-row-dense grid-cols-2">
-        <div className="col-span-1">
-          <img src={my_photo} alt="my picture" loading="lazy"/>
+      <div className=" mt-14 lg:w-[84%] grid grid-cols-1 lg:grid-cols-2 justify-center items-center ">
+        <div className="">
+          <img src={my_photo} alt="me" loading="lazy"/>
         </div>
-        <div className="font-second-font col-span-1 text-xl">Hello there, I am Hamza Outmassint, a full-stack developer with an expertise in both back-end and front-end development.
-          My passion lies in crafting robust and efficient web applications. On the back-end, I possess advanced skills in PHP,
-          particularly with Laravel framework, SQL (MySQL), and MongoDB. When it comes to the front-end, I shine with proficiency in JavaScript,
-          ReactJS, and Redux, empowering me to build dynamic and interactive user interfaces. Additionally, I am well-versed in popular CSS frameworks
-          like Tailwind CSS and Bootstrap, as well as Sass, allowing me to craft visually appealing and responsive designs.
+        <div className="font-second-font text-xl xl:pr-10">
+          <p className="mb-5">
+            Hello there, I am <span className="text-main-color">Hamza Outmassint</span>, a full-stack developer with a proficiency in both back-end and front-end development.
+            My passion lies in crafting robust and efficient web applications. On the back-end, I possess advanced skills in PHP,
+            particularly with Laravel framework, SQL (MySQL), and MongoDB.
+          </p>
+          <p>
+            When it comes to the front-end, I shine with proficiency in JavaScript,
+            ReactJS, and Redux, empowering me to build dynamic and interactive user interfaces. Additionally, I am well-versed in popular CSS frameworks
+            like Tailwind CSS and Bootstrap, as well as Sass, allowing me to craft visually appealing and responsive designs.
+          </p>
         </div>
       </div>
     </section>
