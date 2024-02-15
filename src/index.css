@@ -28,7 +28,7 @@ body {
     height: 1px;
     width: 38px;
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     top: 12px;
 }
 

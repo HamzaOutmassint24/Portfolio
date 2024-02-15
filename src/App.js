@@ -3,7 +3,7 @@ import { AboutMeSection } from "./components/AboutMeSection";
 import { IntroduceSection } from "./components/IntroduceSection";
 import { Navbar } from "./components/Navbar";
 // import { ProjectSection } from "./components/ProjectSection";
-// import { ServicesSection } from "./components/ServicesSection";
+import { ServicesSection } from "./components/ServicesSection";
 // import { SkillsSection } from "./components/SkillsSection";
 import { useState, useEffect } from "react";
 
@@ -49,8 +49,8 @@ function App() {
       <Navbar activeSection={activeSection} scrollToSection={scrollToSection}/>
       <IntroduceSection scrollToSection={scrollToSection}/>
       <AboutMeSection />
-      {/* <ServicesSection />
-            <SkillsSection />
+      <ServicesSection />
+           {/*   <SkillsSection />
             <ProjectSection />
             <ContactSection /> */}
     </div>

@@ -3,7 +3,7 @@ import  my_photo  from "../assets/my picture.png";
 
 export const AboutMeSection = () => {
   return (
-    <section className="lg:h-screen pt-9  xl:mt-16 exactly-1024:mt-24 " id="about-me-section">
+    <section className="xl:h-full lg:h-screen exactly-1024:h-fit pt-9  xl:mt-16 exactly-1024:mt-24 mb-16 " id="about-me-section">
       <div className="flex items-center md:justify-center sm:justify-start">
         <div className="border-1 border-fourth-color  items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl exactly-1024:w-sm flex justify-between">
           <Person size={19} />
@@ -14,7 +14,7 @@ export const AboutMeSection = () => {
         <div className="">
           <img src={my_photo} alt="me" loading="eager"/>
         </div>
-        <div className="font-second-font text-xl xl:pr-10">
+        <div className="font-second-font text-lg xl:pr-10">
           <p className="mb-5">
             Hello there, I am <span className="text-main-color">Hamza Outmassint</span>, a full-stack developer with a proficiency in both back-end and front-end development.
             My passion lies in crafting robust and efficient web applications. On the back-end, I possess advanced skills in PHP,

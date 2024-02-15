@@ -28,7 +28,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
             </button>
           </li>
           <li className="group flex relative">
-            <button onClick={() => scrollToSection("about-me-section")}>
+            <button onClick={() => scrollToSection("services-section")}>
               <MenuButton size={20}
                 className={ activeSection === "services-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
               />
@@ -38,7 +38,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
             </button>
           </li>
           <li className="group flex relative">
-            <button onClick={() => scrollToSection("about-me-section")}>
+            <button onClick={() => scrollToSection("skills-section")}>
               <Diagram3 size={22}
                 className={ activeSection === "skills-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
               />
@@ -48,7 +48,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
             </button>
           </li>
           <li className="group flex relative">
-            <button onClick={() => scrollToSection("about-me-section")}>
+            <button onClick={() => scrollToSection("project-section")}>
               <FileText size={21}
                 className={ activeSection === "project-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
               />
@@ -58,7 +58,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
             </button>
           </li>
           <li className="group flex relative">
-            <button onClick={() => scrollToSection("about-me-section")}>
+            <button onClick={() => scrollToSection("contact-section")}>
               <Envelope size={20}
                 className={ activeSection === "contact-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
               />
@@ -81,7 +81,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
             open === true ? "sm:translate-x-16 md:translate-x-1/2" : "translate-x-full"}`}
         >
           <ul className="mt-16 ml-24 max-h-96 flex flex-col justify-between">
-            <li className="text-lg mb-4">Menu</li>
+            <li className="text-xl mb-4">Menu</li>
             <li>
               <button onClick={() =>{scrollToSection('home'); setOpen(!open) } } className="text-therd-color flex">
                 <HouseDoor size={21} />
@@ -89,31 +89,31 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
               </button>
             </li>
             <li>
-              <button onClick={() =>{scrollToSection('about-me-section') ; setOpen(!open)} } className="text-therd-color flex">
+              <button onClick={() =>{scrollToSection('about-me-section'); setOpen(!open)} } className="text-therd-color flex">
                 <Person size={23} />
                 <span className="ml-2">About</span>
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("services")} className="text-therd-color  flex">
+              <button onClick={() => {scrollToSection("services-section"); setOpen(!open)} } className="text-therd-color  flex">
                 <MenuButton size={20} />
                 <span className="ml-2">Services</span>
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("skills")} className="text-therd-color  flex">
+              <button onClick={() => {scrollToSection("skills-section"); setOpen(!open)} } className="text-therd-color  flex">
                 <Diagram3 size={22} />
                 <span className="ml-2">Skills</span>
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("portfolio")} className="text-therd-color flex">
+              <button onClick={() => {scrollToSection("project-section"); setOpen(!open)} } className="text-therd-color flex">
                 <FileText size={21} />
                 <span className="ml-2">Portfolio</span>
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("contact")} className="text-therd-color flex">
+              <button onClick={() => {scrollToSection("contact-section"); setOpen(!open)} } className="text-therd-color flex">
                 <Envelope size={20} />
                 <span className="ml-2">Contact</span>
               </button>
