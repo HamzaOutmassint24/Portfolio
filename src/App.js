@@ -1,5 +1,5 @@
 import { AboutMeSection } from "./components/AboutMeSection";
-// import { ContactSection } from "./components/ContactSection";
+import { ContactSection } from "./components/ContactSection";
 import { IntroduceSection } from "./components/IntroduceSection";
 import { Navbar } from "./components/Navbar";
 // import { ProjectSection } from "./components/ProjectSection";
@@ -51,8 +51,8 @@ function App() {
       <AboutMeSection />
       <ServicesSection />
       <SkillsSection />
-      {/*    <ProjectSection />
-            <ContactSection /> */}
+      {/*    <ProjectSection />*/}
+      <ContactSection /> 
     </div>
   );
 }

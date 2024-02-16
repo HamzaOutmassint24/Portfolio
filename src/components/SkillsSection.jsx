@@ -12,7 +12,7 @@ export const SkillsSection = () => {
       </div>
       <div className="relative mt-10">
         <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16 z-0"/>
-        <div className="grid grid-cols-1  lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div>
           <h1 className="text-4xl font-bold mb-4">Front-end</h1>
           <ul className="font-second-font text-fifth-color front-end">
