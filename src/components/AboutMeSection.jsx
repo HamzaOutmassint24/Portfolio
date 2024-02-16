@@ -1,4 +1,4 @@
-import { Person } from "react-bootstrap-icons";
+import { Person, ArrowRightShort, Download } from "react-bootstrap-icons";
 import  my_photo  from "../assets/my picture.png";
 
 export const AboutMeSection = () => {
@@ -10,7 +10,7 @@ export const AboutMeSection = () => {
           ABOUT ME
         </div>
       </div>
-      <div className=" mt-14 lg:w-[84%] grid grid-cols-1 lg:grid-cols-2 justify-center items-center ">
+      <div className=" mt-14 lg:w-[84%] grid grid-cols-1  lg:grid-cols-2 justify-center items-center ">
         <div className="">
           <img src={my_photo} alt="me" loading="eager"/>
         </div>
@@ -25,6 +25,11 @@ export const AboutMeSection = () => {
             ReactJS, and Redux, empowering me to build dynamic and interactive user interfaces. Additionally, I am well-versed in popular CSS frameworks
             like Tailwind CSS and Bootstrap, as well as Sass, allowing me to craft visually appealing and responsive designs.
           </p>
+          <a href="/pdf/cv_outmassint_hamza.pdf" target="_blank">
+          <button className="flex items-center justify-center hover:bg-main-color text-bg-color bg-[#4dffaf] font-semibold p-3 px-6 rounded-lg mt-3 transition duration-200 ease-linear">
+            Download CV 
+            <ArrowRightShort size={30}/>
+          </button></a>
         </div>
       </div>
     </section>

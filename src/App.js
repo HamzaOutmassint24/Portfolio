@@ -4,7 +4,7 @@ import { IntroduceSection } from "./components/IntroduceSection";
 import { Navbar } from "./components/Navbar";
 // import { ProjectSection } from "./components/ProjectSection";
 import { ServicesSection } from "./components/ServicesSection";
-// import { SkillsSection } from "./components/SkillsSection";
+import { SkillsSection } from "./components/SkillsSection";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -39,19 +39,19 @@ function App() {
     if (section) {
       window.scrollTo({
         top: section.offsetTop,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   }
 
   return (
     <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
-      <Navbar activeSection={activeSection} scrollToSection={scrollToSection}/>
-      <IntroduceSection scrollToSection={scrollToSection}/>
+      <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
+      <IntroduceSection scrollToSection={scrollToSection} />
       <AboutMeSection />
       <ServicesSection />
-           {/*   <SkillsSection />
-            <ProjectSection />
+      <SkillsSection />
+      {/*    <ProjectSection />
             <ContactSection /> */}
     </div>
   );
