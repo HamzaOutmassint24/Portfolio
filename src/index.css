@@ -52,3 +52,10 @@ body {
 .circle-animation {
     animation: rotate 9s infinite linear; /* Adjust animation duration and easing as needed */
 }
+
+.front-end li , .back-end li , .design li{
+    margin-bottom: 15px;
+}
+.front-end li  span, .back-end li  span, .design li span{
+    margin-left: 7px;
+}

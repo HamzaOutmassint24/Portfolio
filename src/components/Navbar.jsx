@@ -5,7 +5,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className="hidden lg:flex fixed top-44 right-52 2xl:right-72 items-center exactly-1024:right-36">
+      <nav className="hidden lg:flex fixed top-44 right-52 2xl:right-72 items-center exactly-1024:right-36 z-50">
         <ul className="border-1 border-fourth-color rounded-full h-64 flex flex-col justify-between px-3 py-5">
           <li className="group flex relative">
             <button onClick={() => scrollToSection("home")}>

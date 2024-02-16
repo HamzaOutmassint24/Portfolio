@@ -53,6 +53,10 @@ module.exports = {
       right: {
         "14.4rem": "14.4rem",
       },
+      colors: {
+        'light-green': '#9ad6bb ',
+        'main-color':   '#28E98C'
+      },
     },
     screens: {
       sm: "359px",

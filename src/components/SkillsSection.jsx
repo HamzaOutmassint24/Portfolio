@@ -10,10 +10,39 @@ export const SkillsSection = () => {
               MY SKILLS
           </div>
       </div>
-      <div className="relative">
-        <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16"/>
-        <div className="">
-          <h1>sdf</h1>
+      <div className="relative mt-10">
+        <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16 z-0"/>
+        <div className="grid grid-cols-1  lg:grid-cols-3">
+          <div>
+          <h1 className="text-4xl font-bold mb-4">Front-end</h1>
+          <ul className="font-second-font text-fifth-color front-end">
+            <li>✷ <span>React Js</span></li>
+            <li>✷ <span>Next Js</span> </li>
+            <li>✷ <span>JavaScript</span> </li>
+            <li>✷ <span>Html</span> </li>
+            <li>✷ <span>Css</span> </li>
+            <li>✷ <span>Sass</span> </li>
+            <li>✷ <span> TailwindCss</span> </li>
+            <li>✷ <span> Bootstrap</span> </li>
+            <li>✷ <span> Material UI</span>  </li>
+          </ul>
+          </div>
+          <div>
+          <h1 className="text-4xl font-bold mb-4">Back-end</h1>
+          <ul className="font-second-font text-fifth-color back-end">
+            <li>✷  <span>Laravel</span> </li>
+            <li>✷  <span>Php</span> </li>
+            <li>✷  <span>Sql ( MySql )</span> </li>
+            <li>✷  <span>MongoDb</span> </li>
+          </ul>
+          </div>
+          <div>
+          <h1 className="text-4xl font-bold mb-4">Design</h1>
+          <ul className="font-second-font text-fifth-color design">
+          <li>✷  <span>Figma</span> </li>
+          <li>✷  <span>Canva</span> </li>
+          </ul>
+          </div>
         </div>
       </div>
     </section>

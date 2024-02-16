@@ -26,7 +26,7 @@ export const AboutMeSection = () => {
             like Tailwind CSS and Bootstrap, as well as Sass, allowing me to craft visually appealing and responsive designs.
           </p>
           <a href="/pdf/cv_outmassint_hamza.pdf" target="_blank">
-          <button className="flex items-center justify-center hover:bg-main-color text-bg-color bg-[#4dffaf] font-semibold p-3 px-6 rounded-lg mt-3 transition duration-200 ease-linear">
+          <button className="flex items-center justify-center  text-bg-color bg-gradient-to-r from-main-color to-light-green hover:from-light-green hover:to-main-color font-semibold p-3 px-6 rounded-lg mt-3 transition duration-200 ease-linear">
             Download CV 
             <ArrowRightShort size={30}/>
           </button></a>
