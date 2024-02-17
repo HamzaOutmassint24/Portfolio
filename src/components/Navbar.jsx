@@ -69,7 +69,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
           </li>
         </ul>
       </nav>
-      <nav className="lg:hidden sm:flex justify-end relative top-10">
+      <nav className="lg:hidden sm:flex justify-end relative top-10 z-50">
         <button onClick={() => { setOpen(!open);}} className="fixed bg-bg-color border-1 border-fourth-color rounded-full">
           <List size={50} className="p-3" />
         </button>
