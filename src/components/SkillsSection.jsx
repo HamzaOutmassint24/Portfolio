@@ -20,12 +20,12 @@ export const SkillsSection = () => {
             <li>✷ <span>Next Js</span> </li>
             <li>✷ <span>JavaScript</span> </li>
             <li>✷ <span>APIs Rest</span> </li>
+            <li>✷ <span> Redux</span> </li>
             <li>✷ <span>Html</span> </li>
             <li>✷ <span>Css</span> </li>
             <li>✷ <span>Sass</span> </li>
             <li>✷ <span> TailwindCss</span> </li>
             <li>✷ <span> Bootstrap</span> </li>
-            <li>✷ <span> Material UI</span> </li>
           </ul>
           </div>
           <div>

@@ -9,6 +9,9 @@ export const ContactSection = () => {
               CONTACT
           </div>
       </div>
+      <div>
+        
+      </div>
     </section>
   )
 }
