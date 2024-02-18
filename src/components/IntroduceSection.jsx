@@ -49,7 +49,7 @@ export const IntroduceSection = ({scrollToSection}) => {
         </div>
       </div>
       <div className="relative hidden lg:block">
-        <button onClick={() => scrollToSection('about-me-section')} >
+        <button onClick={() => scrollToSection('contact-section')} >
           <ArrowDown
             size={35}
             className="absolute lg:right-[15.8rem] lg:-top-3 xl:-top-5 xl:right-[21.3rem] exactly-1024:right-[15.3rem] animate-bounce"
