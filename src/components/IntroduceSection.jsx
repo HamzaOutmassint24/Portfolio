@@ -26,7 +26,7 @@ export const IntroduceSection = ({scrollToSection}) => {
           <div className="flex mt-4">
             <a
               title="github"
-              href="#github account/"
+              href="https://github.com/HamzaOutmassint"
               className="h-1/2 border-3 border-fourth-color p-2 rounded-full mr-4 group hover:border-main-color transition duration-200 ease-linear"
             >
               <Github
@@ -37,7 +37,7 @@ export const IntroduceSection = ({scrollToSection}) => {
 
             <a
               title="linkdin"
-              href="#linkedin account/"
+              href="https://www.linkedin.com/in/hamza-outmassint/"
               className="h-1/2 border-3 border-fourth-color group hover:border-main-color p-2 rounded-full flex items-center justify-center transition duration-200 ease-linear"
             >
               <Linkedin
@@ -49,7 +49,7 @@ export const IntroduceSection = ({scrollToSection}) => {
         </div>
       </div>
       <div className="relative hidden lg:block">
-        <button onClick={() => scrollToSection('contact-section')} >
+        <button onClick={() => scrollToSection('project-section')} >
           <ArrowDown
             size={35}
             className="absolute lg:right-[15.8rem] lg:-top-3 xl:-top-5 xl:right-[21.3rem] exactly-1024:right-[15.3rem] animate-bounce"
