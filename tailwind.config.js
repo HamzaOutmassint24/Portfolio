@@ -20,19 +20,6 @@ module.exports = {
       normal: "1.5px",
       wide: "6.5px",
     },
-    width: {
-      sm: "9.5rem",
-      md: "9.4rem",
-      lg: "10.6rem",
-      lg: "10.4rem",
-      xl: "9.6rem",
-      "45%": "45%",
-      "50%":"50%",
-      "55%":"55%",
-      "70%":"70%",
-      "84%": "84%",
-      "100%": "100%",
-    },
     colors: {
       "bg-color": "#1f1f1f",
       "main-color": "#28E98C",
@@ -56,6 +43,19 @@ module.exports = {
       colors: {
         'light-green': '#9ad6bb ',
         'main-color':   '#28E98C'
+      },
+      width: {
+        sm: "9.5rem",
+        md: "9.4rem",
+        lg: "10.6rem",
+        lg: "10.4rem",
+        xl: "9.6rem",
+        "45%": "45%",
+        "50%":"50%",
+        "55%":"55%",
+        "70%":"70%",
+        "84%": "84%",
+        "100%": "100%",
       },
     },
     screens: {
