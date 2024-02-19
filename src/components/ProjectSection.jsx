@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { MenuButton, XSquare } from 'react-bootstrap-icons';
-import ProjectImg from '../assets/project images/project-img1.png';
+import Project1Img1 from '../assets/project images/project-img1.png';
+import Project2Img1 from '../assets/project images/project2-img1.jpeg';
+import {Github} from "react-bootstrap-icons";
 
 export const ProjectSection = () => {
-  // Step 1: Define state to manage the visibility of the modal
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Step 2: Create a function to handle the opening and closing of the modal
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -19,29 +19,36 @@ export const ProjectSection = () => {
           PORTFOLIO
         </div>
       </div>
-      <div className="mt-9 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-[84%] relative font-second-font">
-        <div className=' project-image1 relative rounded-3xl h-80 group pb-16 pt-5 px-6'>
-          <a href="#model" className={`flex flex-col `} onClick={handleModalToggle}>
-            <h1 className="text-lg font-bold mb-3 text-bg-color">Stock Building materials</h1>
-            <img src={ProjectImg} alt="project image" className="rounded-md"/>
-            <div className="flex justify-between mt-7">
-              <div>
-                <span className="p-3 px-6 bg-white text-bg-color group-hover:bg-bg-color group-hover:text-white transition duration-200 ease-linear rounded-full mr-2 cursor-default">React</span>
-                <span className="p-3 px-6 bg-white text-bg-color group-hover:bg-bg-color group-hover:text-white transition duration-200 ease-linear rounded-full cursor-default">Laravel</span>
-              </div>
-            </div>
-          </a>
-          <a href="#details" className="absolute bottom-5 right-7 text-bg-color hover:text-blue text underline underline-offset-1">More Details</a>
+      <div className="mt-9 grid grid-cols-1 lg:grid-cols-2 sm:place-items-center lg:place-items-start gap-8 lg:w-[84%] relative font-second-font">
+        <div class="lg:max-w-sm sm:max-w-sm md:max-w-xl lg:h-72 rounded-lg overflow-hidden shadow-lg project-cart1">
+          <div class="font-bold text-bg-color text-lg my-1 pl-2">Stock Building Materials</div>
+          <img class="w-full px-2" src={Project1Img1} alt="Sunset in the mountains" />
+          <div class="px-2 pt-4 lg:mt-4">
+            <span class="inline-block bg-bg-color rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#React/Laravel</span>
+            <span class="inline-block bg-bg-color rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TailwindCss</span>
+          </div>
         </div>
-        <div className={`pb-16 pt-1 px-6 rounded-3xl project-image2 relative h-80 `}>
-          <img src={ProjectImg} alt="project image" className="rounded-md"/>
+        <div class="lg:max-w-sm sm:max-w-sm md:max-w-xl lg:h-72 rounded-lg overflow-hidden shadow-lg project-cart2">
+          <div class="font-bold text-bg-color text-lg my-1 pl-2">Multishop</div>
+          <img class="w-full px-2" src={Project2Img1} alt="Sunset in the mountains" />
+          <div class="px-2 pt-4 lg:mt-4 flex justify-between items-center">
+            <div>
+              <span class="inline-block bg-bg-color text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#React/Laravel</span>
+              <span class="inline-block bg-bg-color text-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Material UI</span>
+            </div>
+            <span class="inline-block pl-3 py-1 mr-1 mb-2">
+              <a title="github" href="https://github.com/HamzaOutmassint" className="group">
+                <Github size={30} className="text-bg-color"/>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
-      {/* Step 3: Conditionally render the modal based on the state */}
+
       {isModalOpen && (
         <div onClick={handleModalToggle} className="fixed inset-0 bg-bg-color bg-opacity-50 flex items-center justify-center">
           <div className="flex justify-center items-center project-image1 text-bg-color p-8 relative rounded-lg w-[70%] h-[70%]">
-            <img src={ProjectImg} alt="project image" className="rounded-md w-3/4"/>
+            <img src={Project1Img1} alt="project image" className="rounded-md w-3/4"/>
             <button onClick={handleModalToggle} className='absolute top-4 right-4'>
               <XSquare size={18}/>
             </button>

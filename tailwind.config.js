@@ -44,6 +44,7 @@ module.exports = {
         'light-green': '#9ad6bb ',
         'white' : '#fff',
         'blue' : '#2563eb',
+        'orange':'#eccc65',
       },
       width: {
         sm: "9.5rem",
