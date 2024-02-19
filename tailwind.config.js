@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontSize: {
-      xs: "3px",
+      xs: "8px",
       sm: "13px",
       base: "1rem",
       lg: "1.1rem", 
@@ -42,7 +42,8 @@ module.exports = {
       },
       colors: {
         'light-green': '#9ad6bb ',
-        'main-color':   '#28E98C'
+        'white' : '#fff',
+        'blue' : '#2563eb',
       },
       width: {
         sm: "9.5rem",
@@ -56,6 +57,9 @@ module.exports = {
         "70%":"70%",
         "84%": "84%",
         "100%": "100%",
+      },
+      height:{
+        "70%":"70%",
       },
     },
     screens: {
