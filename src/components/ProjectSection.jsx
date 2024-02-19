@@ -1,4 +1,5 @@
-import { MenuButton } from "react-bootstrap-icons"
+import { MenuButton } from "react-bootstrap-icons";
+import ProjectImg from "../assets/project images/project-img1.png"
 
 export const ProjectSection = () => {
   return (
@@ -8,6 +9,14 @@ export const ProjectSection = () => {
               <MenuButton size={18}/>
               PORTFOLIO
           </div>
+      </div>
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-[84%] relative">
+        <div className={`pb-16 pt-6 px-6 rounded-3xl project-image1`}>
+          <img src={ProjectImg} alt="project image" className="rounded-md"/>
+        </div>
+        <div className={`pb-16 pt-6 px-6 rounded-3xl project-image2`}>
+          <img src={ProjectImg} alt="project image" className="rounded-md"/>
+        </div>
       </div>
     </section>
   )
