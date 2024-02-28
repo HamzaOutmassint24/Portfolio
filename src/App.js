@@ -1,13 +1,13 @@
 import { AboutMeSection } from "./components/AboutMeSection";
 import { ContactSection } from "./components/ContactSection";
+import Footer from "./components/Footer";
 import { IntroduceSection } from "./components/IntroduceSection";
-import Model from "./components/Model";
+import Modal from "./components/Modal";
 import { Navbar } from "./components/Navbar";
 import { ProjectSection } from "./components/ProjectSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { useState, useEffect } from "react";
-import {Github, Linkedin} from "react-bootstrap-icons";
 
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-
       let sectionId = "";
 
       sections.forEach((section) => {
@@ -26,10 +25,8 @@ function App() {
           sectionId = section.getAttribute("id");
         }
       });
-
       setActiveSection(sectionId);
     };
-
     window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener on unmount
@@ -50,13 +47,17 @@ function App() {
 
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
+    setTimeout(() => {
+      scrollToSection('project-section');
+    }, 50);
   };
 
-  if(isModalOpen){
+
+  if (isModalOpen) {
     return (
-      <Model isModalOpen={isModalOpen} handleModalToggle={handleModalToggle}/>
+      <Modal isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} />
     )
-  }else{
+  } else {
     return (
       <>
         <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
@@ -65,25 +66,9 @@ function App() {
           <AboutMeSection />
           <ServicesSection />
           <SkillsSection />
-          <ProjectSection handleModalToggle={handleModalToggle}/>
-          <ContactSection /> 
-          <div className="font-second-font pb-4 flex justify-between">
-            <span> © Designed and Developed by me :) </span>
-            <span className="flex xl:mr-16">
-            <a title="github" href="https://github.com/HamzaOutmassint" className="group">
-              <Github
-                size={30}
-                className="text-fourth-color group-hover:text-main-color transition duration-200 ease-linear p-1"
-              />
-            </a>
-            <a title="linkdin" href="https://www.linkedin.com/in/hamza-outmassint/" className="group">
-              <Linkedin
-                size={30}
-                className="text-fourth-color group-hover:text-main-color transition duration-200 ease-linear p-1"
-              />
-            </a>
-            </span>
-          </div>
+          <ProjectSection handleModalToggle={handleModalToggle} />
+          <ContactSection />
+          <Footer />
         </div>
       </>
     )

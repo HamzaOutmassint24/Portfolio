@@ -26,7 +26,7 @@ module.exports = {
       "second-color": "#404042",
       "therd-color": "#ffffffad",
       "fourth-color": "#7f7272",
-      "fifth-color": "#999999",
+      "fifth-color": "#9ca3af",
     },
     borderWidth: {
       1: "1px",

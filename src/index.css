@@ -14,7 +14,7 @@
     color: var(--main-color);
     background: #1f1f1f;
 }
-  
+
 /* For other browsers */
 ::selection {
     background: var(--main-color);
@@ -45,18 +45,29 @@ body {
 }
 
 @keyframes rotate {
-    0% { transform: translateX(0) translateY(0) rotate(0deg); }
-    100% { transform: translateX(0) translateY(0) rotate(360deg); }
-  }
-  
-.circle-animation {
-    animation: rotate 9s infinite linear; /* Adjust animation duration and easing as needed */
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) rotate(360deg);
+    }
 }
 
-.front-end li , .back-end li , .design li{
+.circle-animation {
+    animation: rotate 9s infinite linear;
+    /* Adjust animation duration and easing as needed */
+}
+
+.front-end li,
+.back-end li,
+.design li {
     margin-bottom: 15px;
 }
-.front-end li  span, .back-end li  span, .design li span{
+
+.front-end li span,
+.back-end li span,
+.design li span {
     margin-left: 7px;
     background-color: #404042;
     color: #fff;
@@ -70,28 +81,61 @@ body {
 .project-image2{
     background-image: url("assets/bg-img.jpg");
 } */
-.project-cart1{
+.project-cart1 {
     background: hsla(145, 84%, 73%, 1);
 
     background: linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
-    
+
     background: -moz-linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
-    
+
     background: -webkit-linear-gradient(90deg, hsla(145, 84%, 73%, 1) 0%, hsla(150, 61%, 48%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#82F4B1", endColorstr="#30C67C", GradientType=1 );
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#82F4B1", endColorstr="#30C67C", GradientType=1);
 
 }
-.project-cart2{
+
+.project-cart2 {
     background: hsla(167, 68%, 73%, 1);
 
     background: linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
-    
+
     background: -moz-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
-    
+
     background: -webkit-linear-gradient(90deg, hsla(167, 68%, 73%, 1) 0%, hsla(178, 59%, 48%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8DE9D5", endColorstr="#32C4C0", GradientType=1 );
 
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#8DE9D5", endColorstr="#32C4C0", GradientType=1);
+}
 
+.cta {
+    position: relative;
+    padding: 12px 20px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    @apply md:py-[14px] lg:py-[15px] xl:py-[17px] lg:px-6 xl:px-[27px]
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #404042;
+    width: 100%;
+    height: 45px;
+    transition: all 0.3s ease;
+    @apply md:h-[50px] lg:h-[55px] xl:h-[60px]
+}
+
+.cta span {
+    position: relative;
+    line-height: normal;
+}
+
+.cta:hover:before {
+    width: 45px;
+    background: #404042;
+    @apply md:w-[50px] lg:w-[55px] xl:w-[60px]
 }
