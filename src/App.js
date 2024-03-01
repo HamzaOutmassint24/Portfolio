@@ -13,6 +13,8 @@ import { useState, useEffect } from "react";
 function App() {
   const [activeSection, setActiveSection] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [switchProject, setSwitchProject] = useState('');
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,10 +54,9 @@ function App() {
     }, 50);
   };
 
-
   if (isModalOpen) {
     return (
-      <Modal isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} />
+      <Modal isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} switchProject={switchProject}/>
     )
   } else {
     return (
@@ -66,7 +67,7 @@ function App() {
           <AboutMeSection />
           <ServicesSection />
           <SkillsSection />
-          <ProjectSection handleModalToggle={handleModalToggle} />
+          <ProjectSection handleModalToggle={handleModalToggle} setSwitchProject={setSwitchProject}/>
           <ContactSection />
           <Footer />
         </div>
