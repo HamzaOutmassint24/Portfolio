@@ -1,5 +1,5 @@
 import { HouseDoor, Github, Linkedin, ArrowDown } from "react-bootstrap-icons";
-import img_my_project from "../assets/round-text.png";
+import img_my_project from "../../assets/round-text.png";
 
 export const IntroduceSection = ({scrollToSection}) => {
   return (

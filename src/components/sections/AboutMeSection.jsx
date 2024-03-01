@@ -1,5 +1,5 @@
-import { Person, ArrowRightShort, Download } from "react-bootstrap-icons";
-import  my_photo  from "../assets/my picture.png";
+import { Person, ArrowRightShort } from "react-bootstrap-icons";
+import  my_photo  from "../../assets/my picture.png";
 
 export const AboutMeSection = () => {
   return (

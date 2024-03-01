@@ -1,5 +1,5 @@
 import { Diagram3 } from "react-bootstrap-icons";
-import butterfly from '../assets/butterfly.png';
+import butterfly from '../../assets/butterfly.png';
 
 export const SkillsSection = () => {
   return (

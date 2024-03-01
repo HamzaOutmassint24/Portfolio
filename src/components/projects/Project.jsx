@@ -2,18 +2,18 @@ import { useEffect } from 'react';
 import StockBuildingmaterials from './StockBuildingmaterials';
 import MultiShop from './Multishop';
 
-const Modal = ({ isModalOpen, handleModalToggle ,switchProject}) => {
+const Project = ({ isModalOpen, handleModalToggle ,ProjectName}) => {
     useEffect(()=>{
         window.scrollTo(0, 0);
     })
 
     if (isModalOpen) {
-        if(switchProject === 'Stock-Building-materials'){
+        if(ProjectName === 'Stock-Building-materials'){
              return <StockBuildingmaterials handleModalToggle={handleModalToggle} />
         }
-        else if(switchProject === 'Multishop'){
+        else if(ProjectName === 'Multishop'){
             return <MultiShop handleModalToggle={handleModalToggle} />
         }
     }
 }
-export default Modal
+export default Project

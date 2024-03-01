@@ -1,19 +1,19 @@
-import { AboutMeSection } from "./components/AboutMeSection";
-import { ContactSection } from "./components/ContactSection";
+import { AboutMeSection } from "./components/sections/AboutMeSection";
+import { ContactSection } from "./components/sections/ContactSection";
 import Footer from "./components/Footer";
-import { IntroduceSection } from "./components/IntroduceSection";
-import Modal from "./components/Modal";
+import { IntroduceSection } from "./components/sections/IntroduceSection";
+import Project from "./components/projects/Project";
 import { Navbar } from "./components/Navbar";
-import { ProjectSection } from "./components/ProjectSection";
-import { ServicesSection } from "./components/ServicesSection";
-import { SkillsSection } from "./components/SkillsSection";
+import { ProjectSection } from "./components/sections/ProjectSection";
+import { ServicesSection } from "./components/sections/ServicesSection";
+import { SkillsSection } from "./components/sections/SkillsSection";
 import { useState, useEffect } from "react";
 
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [switchProject, setSwitchProject] = useState('');
+  const [ProjectName, setProjectName] = useState('');
 
 
   useEffect(() => {
@@ -56,7 +56,7 @@ function App() {
 
   if (isModalOpen) {
     return (
-      <Modal isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} switchProject={switchProject}/>
+      <Project isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} ProjectName={ProjectName}/>
     )
   } else {
     return (
@@ -67,7 +67,7 @@ function App() {
           <AboutMeSection />
           <ServicesSection />
           <SkillsSection />
-          <ProjectSection handleModalToggle={handleModalToggle} setSwitchProject={setSwitchProject}/>
+          <ProjectSection handleModalToggle={handleModalToggle} setProjectName={setProjectName}/>
           <ContactSection />
           <Footer />
         </div>

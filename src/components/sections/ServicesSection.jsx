@@ -1,5 +1,5 @@
 import { MenuButton, CodeSlash } from "react-bootstrap-icons";
-import figma from "../assets/figma.svg"
+import figma from "../../assets/figma.svg"
 
 export const ServicesSection = () => {
   return (

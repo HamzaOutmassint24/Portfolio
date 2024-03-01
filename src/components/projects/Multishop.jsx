@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Project2Img1 from '../assets/project images/project2-img1.jpeg';
-import Project2Img2 from '../assets/project images/project2-img2.png';
-import Project2Img3 from '../assets/project images/project2-img3.png';
-import Project2Img4 from '../assets/project images/project2-img4.png';
-import Project2Img5 from '../assets/project images/project2-img5.png';
+import Project2Img1 from '../../assets/project images/project2-img1.jpeg';
+import Project2Img2 from '../../assets/project images/project2-img2.png';
+import Project2Img3 from '../../assets/project images/project2-img3.png';
+import Project2Img4 from '../../assets/project images/project2-img4.png';
+import Project2Img5 from '../../assets/project images/project2-img5.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 
 export default function MultiShop({ handleModalToggle }) {
@@ -34,7 +34,8 @@ export default function MultiShop({ handleModalToggle }) {
                 <ul className='list-disc text-base leading-[2.5rem] mt-2 ml-10 mb-12 text-fifth-color'>
                     <li>Laravel: A PHP web application framework used for back-end development</li>
                     <li>React: A JavaScript library used for Building user interfaces</li>
-                    <li>Tailwind CSS: A utility-first CSS framework used for styling the application</li>
+                    <li>CSS: is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML</li>
+                    <li>Material UI: is an open-source React component library that implements Google's Material Design.</li>
                 </ul>
                 <a href="https://github.com/Abdellah-Idrissi/fashion_shop" target="_blank" className="cta flex items-center gap-x-[3px] lg:gap-x-[5px] w-fit" rel="noreferrer">
                     <span className=" font-clash font-semibold text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
@@ -44,25 +45,18 @@ export default function MultiShop({ handleModalToggle }) {
                 </a>
             </div>
             <div className='md:mr-20 mr-4 mt-14 pb-10'>
-                <Swiper
-                    spaceBetween={30}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <img src={Project2Img4} alt="projectImage" className="rounded-md " />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={Project2Img3} alt="projectImage" className="rounded-md " />
-                    </SwiperSlide>
+                <Swiper spaceBetween={30} pagination={{ clickable: true, }} modules={[Pagination]} className="mySwiper">
                     <SwiperSlide>
                         <img src={Project2Img1} alt="projectImage" className="rounded-md " />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={Project2Img2} alt="projectImage" className="rounded-md " />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Project2Img3} alt="projectImage" className="rounded-md " />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Project2Img4} alt="projectImage" className="rounded-md " />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={Project2Img5} alt="projectImage" className="rounded-md " />

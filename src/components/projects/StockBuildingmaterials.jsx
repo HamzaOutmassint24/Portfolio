@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Project1Img1 from '../assets/project images/project-img1.png';
-import Project1Img2 from '../assets/project images/project-img2.png';
-import Project1Img3 from '../assets/project images/project-img3.png';
-import Project1Img4 from '../assets/project images/project-img4.png';
+import Project1Img1 from '../../assets/project images/project-img1.png';
+import Project1Img2 from '../../assets/project images/project-img2.png';
+import Project1Img3 from '../../assets/project images/project-img3.png';
+import Project1Img4 from '../../assets/project images/project-img4.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 
 export default function StockBuildingmaterials({ handleModalToggle }) {
