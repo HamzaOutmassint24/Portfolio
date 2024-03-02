@@ -8,13 +8,22 @@ import { ProjectSection } from "./components/sections/ProjectSection";
 import { ServicesSection } from "./components/sections/ServicesSection";
 import { SkillsSection } from "./components/sections/SkillsSection";
 import { useState, useEffect } from "react";
+import Loading from "./components/preloader/Loading";
 
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [ProjectName, setProjectName] = useState('');
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,25 +63,29 @@ function App() {
     }, 50);
   };
 
-  if (isModalOpen) {
-    return (
-      <Project isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} ProjectName={ProjectName}/>
-    )
-  } else {
-    return (
-      <>
-        <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
-          <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
-          <IntroduceSection scrollToSection={scrollToSection} />
-          <AboutMeSection />
-          <ServicesSection />
-          <SkillsSection />
-          <ProjectSection handleModalToggle={handleModalToggle} setProjectName={setProjectName}/>
-          <ContactSection />
-          <Footer />
-        </div>
-      </>
-    )
+  if(loading){
+    return <Loading/>
+  }else{
+    if (isModalOpen) {
+      return (
+        <Project isModalOpen={isModalOpen} handleModalToggle={handleModalToggle} ProjectName={ProjectName} />
+      )
+    } else {
+      return (
+        <>
+          <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
+            <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
+            <IntroduceSection scrollToSection={scrollToSection} />
+            <AboutMeSection />
+            <ServicesSection />
+            <SkillsSection />
+            <ProjectSection handleModalToggle={handleModalToggle} setProjectName={setProjectName} />
+            <ContactSection />
+            <Footer />
+          </div>
+        </>
+      )
+    }
   }
 }
 

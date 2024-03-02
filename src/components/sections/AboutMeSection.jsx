@@ -1,5 +1,6 @@
 import { Person, ArrowRightShort } from "react-bootstrap-icons";
-import  my_photo  from "../../assets/my picture.png";
+import codeSnippet from "../../assets/code-snippet.svg";
+import { RoughNotation } from "react-rough-notation";
 
 export const AboutMeSection = () => {
   return (
@@ -10,7 +11,7 @@ export const AboutMeSection = () => {
           ABOUT ME
         </div>
       </div>
-      <div className=" mt-14 lg:w-[84%] grid grid-cols-1  lg:grid-cols-2 justify-center items-center ">
+      {/* <div className=" mt-14 lg:w-[84%] grid grid-cols-1  lg:grid-cols-2 justify-center items-center ">
         <div className="">
           <img src={my_photo} alt="me" loading="eager"/>
         </div>
@@ -30,6 +31,24 @@ export const AboutMeSection = () => {
             Download CV 
             <ArrowRightShort size={30}/>
           </button></a>
+        </div>
+      </div> */}
+      <div className=" my-20 pt-20 lg:w-[84%] content-about flex justify-center relative items-center flex-col">
+        <div className="font-second-font text-[black] card w-[300px] h-[409px] bg-[#fff] p-6 rounded-3xl -rotate-12 relative top-[-7.75rem] -left-[1.5rem] z-50 ">
+          <h1 className="text-[red] font-bold text-lg">HAMZA OUTMASSINT</h1>
+          <RoughNotation animationDelay={1000} padding={[5, 0]} multiline type="highlight">
+            <h5 className="font-bold ">Full-stack Developer</h5>
+          </RoughNotation>
+          
+          <div className="mt-6 text-[#727171]">
+            I am Hamza, a full-stack developer skilled in back-end (PHP/Laravel, SQL, MongoDB)
+            and front-end (JavaScript, ReactJS, Redux). Experienced with CSS frameworks like Tailwind CSS,
+            Bootstrap, and Sass for crafting dynamic, responsive designs. Passionate about building robust
+            web applications.
+          </div>
+        </div>
+        <div className="bg-[#0b0b0e] p-6 rounded-3xl rotate-12 absolute top-9 right-12 code-snippet">
+          <img src={codeSnippet} alt="code snippet" width={250} height={200} />
         </div>
       </div>
     </section>

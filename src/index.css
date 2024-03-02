@@ -139,3 +139,27 @@ body {
     background: #404042;
     @apply md:w-[50px] lg:w-[55px] xl:w-[60px]
 }
+.content-about{
+    height: 40rem;
+    background: url("./assets/gradient-blob.svg") center top no-repeat;
+    background-size: contain;
+    @include respond-below(xs) {
+      align-items: flex-start;
+    }
+}
+
+.code-snippet::after, .card::after{
+    content: '';
+    width: 105%;
+    height: 420px;
+    -webkit-backdrop-filter: blur(.4rem);
+    backdrop-filter: blur(.4rem);
+    background-color: #1f1f1f;
+    opacity: 0.1;
+    position: absolute;
+    left: -12px;
+    border-radius: 24px;
+    bottom: -11px;
+    z-index: 0 !important;
+}
+
