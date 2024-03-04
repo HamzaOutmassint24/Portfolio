@@ -1,0 +1,42 @@
+[
+    {
+        "title": "JavaScript",
+        "image": "icon-js.svg"
+    },
+    {
+        "title": "React js",
+        "image": "icon-react.svg"
+    },
+    {
+        "title": "Laravel",
+        "image": "icon-laravel.svg"
+    },
+    {
+        "title": "HTML",
+        "image": "icon-html.svg"
+    },
+    {
+        "title": "Sass",
+        "image": "icon-css.svg"
+    },
+    {
+        "title": "Sql",
+        "image": "icon-sql.svg"
+    },
+    {
+        "title": "Php",
+        "image": "icon-php.svg"
+    },
+    {
+        "title": "Mongodb",
+        "image": "icon-mongodb.svg"
+    },
+    {
+        "title": "Figma",
+        "image": "icon-figma.svg"
+    },
+    {
+        "title": "Rest api",
+        "image": "icon-api.svg"
+    }
+  ]

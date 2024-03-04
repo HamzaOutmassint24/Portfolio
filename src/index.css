@@ -7,6 +7,9 @@
 :root {
     --main-color: #28e98c;
     --second-color: #999999;
+    --circSize: 60dvw;
+    --cardSize: calc(var(--circSize) / 5.2);
+    --color-white: 0, 0%, 100%;
 }
 
 /* For Firefox */
@@ -139,16 +142,19 @@ body {
     background: #404042;
     @apply md:w-[50px] lg:w-[55px] xl:w-[60px]
 }
-.content-about{
+
+.content-about {
     height: 40rem;
     background: url("./assets/gradient-blob.svg") center top no-repeat;
     background-size: contain;
+
     @include respond-below(xs) {
-      align-items: flex-start;
+        align-items: flex-start;
     }
 }
 
-.code-snippet::after, .card::after{
+.code-snippet::after,
+.card::after {
     content: '';
     width: 105%;
     height: 420px;
@@ -163,3 +169,101 @@ body {
     z-index: 0 !important;
 }
 
+.blobs {
+    position: absolute;
+    height: 40rem;
+    width: 20%;
+    background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5));
+    filter: blur(6rem);
+    border-radius: 50%;
+}
+
+.circularCarousel {
+    width: var(--circSize);
+    height: var(--circSize);
+}
+
+.circularCarousel svg {
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.box {
+    width: var(--cardSize);
+    height: var(--cardSize);
+    background: conic-gradient(#f0f0f0, hsla(var(--color-white), 1));
+    touch-action: none;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform-origin: 50% 50%;
+    transform: translate(336px, -909.681px);
+}
+
+.box img {
+    max-width: calc(var(--cardSize) - (var(--cardSize) / 2));
+}
+
+.collisionDiv {
+    --width: 0.2rem;
+    position: absolute;
+    z-index: 100;
+    top: calc(var(--cardSize) - var(--cardSize) / 2);
+    left: calc(50% - var(--width) / 2);
+    width: var(--width);
+    height: var(--width);
+}
+
+.sphereWrapper {
+    --size: 16dvw;
+    position: absolute;
+    bottom: calc(-1 * var(--size) / 2);
+    left: calc(50% - var(--size) / 2);
+}
+
+.sphereWrapper .sphere {
+    transition: all .3s ease-in-out;
+    /* transform-origin: 50% 50%; */
+
+    width: var(--size);
+    height: var(--size);
+    border-radius: 100%;
+    background: linear-gradient(113deg, #DECAFF 11.44%, #691EE2 60.27%);
+    box-shadow: -35.036px -50.051px 80.1px 0px rgba(172, 60, 225, 0.76) inset, 0px 20.02px 40px 0px rgba(194, 255, 255, 0.25) inset, 0px 0px 24px 0px rgba(255, 255, 255, 0.26) inset;
+
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sphereWrapper .sphere::before,
+.sphereWrapper .sphere::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.sphereWrapper .sphere::after {
+    width: 66%;
+    height: 100%;
+    filter: blur(8rem);
+    background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, #174AFF 100%);
+}
+
+.sphereWrapper .sphere::before {
+    width: 120%;
+    height: 120%;
+    border-radius: 100%;
+    filter: blur(8rem);
+    background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #9829ff 100%);
+    transform: translate(-50%, -80%);
+}
+
+.sphereWrapper .sphere .isActive {
+    transform: scale(0.8);
+}

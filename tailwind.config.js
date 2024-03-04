@@ -50,7 +50,6 @@ module.exports = {
         sm: "9.5rem",
         md: "9.4rem",
         lg: "10.6rem",
-        // lg: "10.4rem",
         xl: "9.6rem",
         "45%": "45%",
         "50%":"50%",

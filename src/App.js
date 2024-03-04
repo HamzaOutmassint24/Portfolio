@@ -73,7 +73,7 @@ function App() {
     } else {
       return (
         <>
-          <div className="container mx-auto scroll-smooth md:px-20 sm:p-0">
+          <div className="container mx-auto scroll-smooth xl:px-32 md:px-10 sm:p-0">
             <Navbar activeSection={activeSection} scrollToSection={scrollToSection} />
             <IntroduceSection scrollToSection={scrollToSection} />
             <AboutMeSection />
