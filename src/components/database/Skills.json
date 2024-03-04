@@ -1,42 +1,57 @@
 [
     {
         "title": "JavaScript",
+        "description": "I bring websites to life with JavaScript, adding interactive features and optimizing performance with clean and efficient code.",
         "image": "icon-js.svg"
     },
     {
-        "title": "React js",
+        "title": "React Js",
+        "description": "Using React, I craft scalable user interfaces with components, state management, and virtual DOM manipulation for seamless web applications.",
         "image": "icon-react.svg"
     },
     {
         "title": "Laravel",
+        "description": "Laravel: A PHP framework for building powerful web applications with simplicity and elegance.",
         "image": "icon-laravel.svg"
     },
     {
         "title": "HTML",
+        "description": "Beyond markup, HTML is crucial for an inclusive web. I structure content carefully for universal accessibility.",
         "image": "icon-html.svg"
     },
     {
         "title": "Sass",
+        "description": "I prioritize pixel perfection, paying close attention to details for visually polished and precisely aligned designs, ensuring a seamless user experience.",
         "image": "icon-css.svg"
     },
     {
-        "title": "Sql",
+        "title": "Sql (MySql)",
+        "description": "SQL: A standard language for managing and manipulating databases, enabling data retrieval, insertion, updating, and deletion.",
         "image": "icon-sql.svg"
     },
     {
         "title": "Php",
+        "description": "PHP: A server-side scripting language used for building dynamic web applications and websites.",
         "image": "icon-php.svg"
     },
     {
         "title": "Mongodb",
+        "description": "MongoDB: A NoSQL database management system known for its flexibility, scalability, and document-oriented structure.",
         "image": "icon-mongodb.svg"
     },
     {
         "title": "Figma",
+        "description": "While not a full-time UI designer, I have an eye for aesthetics, creating visually appealing and user-friendly interfaces.",
         "image": "icon-figma.svg"
     },
     {
-        "title": "Rest api",
+        "title": "REST APIs",
+        "description": "I integrate data and functionality seamlessly with REST APIs, creating dynamic web applications for enhanced performance.",
         "image": "icon-api.svg"
+    },
+    {
+        "title": "Tailwind Css",
+        "description": "Tailwind CSS: A utility-first CSS framework that streamlines the process of building modern, responsive web interfaces by providing a set of pre-defined utility classes.",
+        "image": "icon-tailwind.svg"
     }
-  ]
+]

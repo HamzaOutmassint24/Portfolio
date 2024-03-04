@@ -222,7 +222,6 @@ body {
     --size: 16dvw;
     position: absolute;
     bottom: calc(-1 * var(--size) / 2);
-    left: calc(50% - var(--size) / 2);
 }
 
 .sphereWrapper .sphere {

@@ -1,7 +1,7 @@
 import { Diagram3 } from "react-bootstrap-icons";
 import butterfly from '../../assets/butterfly.png';
 import Skills from '../database/Skills.json';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
@@ -11,6 +11,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export const SkillsSection = () => {
   const [dragStatus, setDragStatus] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTitleIndex(prevIndex => (prevIndex + 1) % Skills.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   gsap.registerPlugin(Draggable, MotionPathPlugin, ScrollTrigger);
 
@@ -70,19 +79,6 @@ export const SkillsSection = () => {
       },
     });
 
-  //   const sphereTL = gsap.timeline({
-  //     scrollTrigger: {
-  //         trigger: container.current,
-  //         start: 'top 25%',
-  //         end: 'bottom 75%',
-  //         scrub: true,
-  //         toggleActions: 'play none none reverse',
-  //     }
-  // });
-  // sphereTL.from(sphere.current, {
-  //     yPercent: -200
-  // })
-
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => {
@@ -90,25 +86,19 @@ export const SkillsSection = () => {
     };
   }, { scope: container });
 
-
-
-
-
   return (
-    <section className="xl:h-[44rem] lg:h-[46rem] exactly-1024:h-fit pt-9 mt-6 overflow-hidden relative z-0" id="skills-section" ref={container}>
-      {/* <div className="blobs left-0"></div> */}
+    <section className="xl:h-[44rem] lg:h-[46rem] md:h-[30rem]  sm:h-[24rem] exactly-1024:h-[37rem] pt-9 mt-6 overflow-hidden relative z-0" id="skills-section" ref={container}>
       <div className="flex items-center md:justify-center sm:justify-start">
         <div className="border-1 border-second-color items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl flex justify-between">
           <Diagram3 size={18} />
           <span className="pr-5"> SKILLS </span>
         </div>
       </div>
-      <div className="relative mt-10 mr-16">
+      <div className="relative mt-10 lg:mr-16">
         <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16 z-0" />
         <h1 className="font-second-font lg:text-5xl sm:text-xl">
           <span>My</span> <br /><span className="text-main-color">Skillset</span>
         </h1>
-
 
         <div className="flex justify-center items-center mt-8">
           <div className='collisionDiv' ref={collisionDiv}></div>
@@ -127,7 +117,10 @@ export const SkillsSection = () => {
           </div>
         </div>
       </div>
-      <div ref={sphere} className='sphereWrapper'>
+      <div className="absolute exactly-1024:top-[73%] lg:top-[68%] md:top-[70%] sm:top-[75%] lg:left-[33%] sm:left-[35%] w-[30%] flex flex-col items-center justify-center">
+        <span className="text-fifth-color font-second-font md:text-3xl sm:text-lg  font-bold "> {Skills[currentTitleIndex].title} </span>
+      </div>
+      <div ref={sphere} className='sphereWrapper lg:left-[37%] exactly-1024:left-[39%] sm:left-[41%]'>
         <div className={`sphere ${dragStatus === 'pressed' ? 'isActive' : ''}`}></div>
       </div>
     </section>
