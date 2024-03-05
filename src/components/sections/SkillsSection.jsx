@@ -120,7 +120,7 @@ export const SkillsSection = () => {
       <div className="absolute exactly-1024:top-[73%] lg:top-[68%] md:top-[70%] sm:top-[75%] lg:left-[33%] sm:left-[35%] w-[30%] flex flex-col items-center justify-center">
         <span className="text-fifth-color font-second-font md:text-3xl sm:text-lg  font-bold "> {Skills[currentTitleIndex].title} </span>
       </div>
-      <div ref={sphere} className='sphereWrapper lg:left-[37%] exactly-1024:left-[39%] sm:left-[41%]'>
+      <div ref={sphere} className='sphereWrapper xl:left-[38%] lg:left-[37%] exactly-1024:left-[39%] sm:left-[41%]'>
         <div className={`sphere ${dragStatus === 'pressed' ? 'isActive' : ''}`}></div>
       </div>
     </section>

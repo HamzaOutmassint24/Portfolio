@@ -38,6 +38,19 @@ body {
   ### some styles that i can't do it with tialwindCss ###
 */
 
+.blobs {
+    position: absolute;
+    height: 40rem;
+    width: 20%;
+    background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5));
+    filter: blur(6rem);
+    border-radius: 50%;
+}
+
+/* 
+    ### introduc section style ###
+*/
+
 .helloWorld::before {
     content: "";
     height: 1px;
@@ -62,28 +75,10 @@ body {
     /* Adjust animation duration and easing as needed */
 }
 
-.front-end li,
-.back-end li,
-.design li {
-    margin-bottom: 15px;
-}
+/* 
+    ### project section style ###
+*/
 
-.front-end li span,
-.back-end li span,
-.design li span {
-    margin-left: 7px;
-    background-color: #404042;
-    color: #fff;
-    padding: 6px 15px;
-    border-radius: 5px;
-}
-
-/* .project-image1{
-    background-image: url("assets/bg-img5.jpg");
-}
-.project-image2{
-    background-image: url("assets/bg-img.jpg");
-} */
 .project-cart1 {
     background: hsla(145, 84%, 73%, 1);
 
@@ -143,21 +138,34 @@ body {
     @apply md:w-[50px] lg:w-[55px] xl:w-[60px]
 }
 
-.content-about {
-    height: 40rem;
-    background: url("./assets/gradient-blob.svg") center top no-repeat;
-    background-size: contain;
+/* 
+    ### about section style ###
+*/
 
-    @include respond-below(xs) {
-        align-items: flex-start;
-    }
+.about-blobs {
+    position: absolute;
+    height: 16rem;
+    width: 29%;
+    background: rgb(0 41 224 / 73%);
+    /* background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5)); */
+    filter: blur(3rem);
+    border-radius: 50%;
+    bottom: -2rem;
+    left: 21rem;
+}
+
+.card{
+    background-image: url("assets/spiral.svg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .code-snippet::after,
 .card::after {
     content: '';
     width: 105%;
-    height: 420px;
+    height: 520px;
     -webkit-backdrop-filter: blur(.4rem);
     backdrop-filter: blur(.4rem);
     background-color: #1f1f1f;
@@ -166,17 +174,12 @@ body {
     left: -12px;
     border-radius: 24px;
     bottom: -11px;
-    z-index: 0 !important;
 }
 
-.blobs {
-    position: absolute;
-    height: 40rem;
-    width: 20%;
-    background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5));
-    filter: blur(6rem);
-    border-radius: 50%;
-}
+
+/* 
+    ### skills section style ###
+*/
 
 .circularCarousel {
     width: var(--circSize);

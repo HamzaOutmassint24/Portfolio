@@ -4,7 +4,7 @@ import figma from "../../assets/figma.svg"
 export const ServicesSection = () => {
   return (
     <section className="xl:h-full lg:h-screen exactly-1024:h-fit pt-9 md:mb-48 sm:mb-28 relative" id="services-section">
-      <div className="blobs -left-56 top-24"></div>
+      <div className="blobs -left-56 top-64"></div>
       <div className="flex items-center md:justify-center sm:justify-start">
         <div className="border-1 border-second-color items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl flex justify-between">
           <MenuButton size={18} />
