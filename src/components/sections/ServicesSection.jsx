@@ -1,16 +1,17 @@
 import { MenuButton, CodeSlash } from "react-bootstrap-icons";
 import figma from "../../assets/figma.svg"
+import NavTitle from "../animated/NavTitle";
 
 export const ServicesSection = () => {
   return (
     <section className="xl:h-full lg:h-screen exactly-1024:h-fit pt-9 md:mb-48 sm:mb-28 relative" id="services-section">
       <div className="blobs -left-56 top-64"></div>
-      <div className="flex items-center md:justify-center sm:justify-start">
+      <NavTitle>
         <div className="border-1 border-second-color items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl flex justify-between">
           <MenuButton size={18} />
           SERVICES
         </div>
-      </div>
+      </NavTitle>
       <div className="mt-14 lg:w-[70%] font-second-font">
         <h1 className="font-second-font lg:text-5xl sm:text-xl">
         <span>My</span> <br/><span className="text-main-color">Specializations</span>

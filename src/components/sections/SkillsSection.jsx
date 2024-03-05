@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NavTitle from "../animated/NavTitle";
 
 export const SkillsSection = () => {
   const [dragStatus, setDragStatus] = useState(null);
@@ -88,12 +89,12 @@ export const SkillsSection = () => {
 
   return (
     <section className="xl:h-[44rem] lg:h-[46rem] md:h-[30rem]  sm:h-[24rem] exactly-1024:h-[37rem] pt-9 mt-6 overflow-hidden relative z-0" id="skills-section" ref={container}>
-      <div className="flex items-center md:justify-center sm:justify-start">
+      <NavTitle>
         <div className="border-1 border-second-color items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl flex justify-between">
           <Diagram3 size={18} />
           <span className="pr-5"> SKILLS </span>
         </div>
-      </div>
+      </NavTitle>
       <div className="relative mt-10 lg:mr-16">
         <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16 z-0" />
         <h1 className="font-second-font lg:text-5xl sm:text-xl">

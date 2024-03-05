@@ -2,18 +2,19 @@ import { MenuButton } from 'react-bootstrap-icons';
 import Project1Img1 from '../../assets/project images/project-img1.png';
 import Project2Img1 from '../../assets/project images/project2-img1.jpeg';
 import { Github } from "react-bootstrap-icons";
+import NavTitle from '../animated/NavTitle';
 
 export const ProjectSection = ({ handleModalToggle, setProjectName }) => {
 
   return (
-    <section className="xl:h-full lg:h-full exactly-1024:h-fit pt-9 mt-6" id="project-section">
+    <section className="xl:h-full lg:h-full exactly-1024:h-fit pb-16 pt-9 mt-6" id="project-section">
       <div className="blobs right-20"></div>
-      <div className="flex items-center md:justify-center sm:justify-start">
+      <NavTitle>
         <div className="border-1 border-second-color items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl flex justify-between">
           <MenuButton size={18} />
           PORTFOLIO
         </div>
-      </div>
+      </NavTitle>
       <div className="my-24 grid grid-cols-1 lg:grid-cols-2 sm:place-items-center lg:place-items-start gap-8 lg:w-[84%] relative font-second-font">
         <div className="lg:max-w-sm sm:max-w-sm md:max-w-xl lg:h-72 rounded-lg overflow-hidden shadow-lg project-cart1">
           <div className="font-bold text-bg-color text-lg my-1 pl-2">Stock Building Materials</div>

@@ -151,7 +151,7 @@ body {
     filter: blur(3rem);
     border-radius: 50%;
     bottom: -2rem;
-    left: 21rem;
+    /* left: 21rem; */
 }
 
 .card{
