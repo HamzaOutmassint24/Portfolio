@@ -77,7 +77,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
       </NavAnimation>
        {/* navbar for small screen */}
       <nav className="lg:hidden sm:flex justify-end relative top-10 z-50">
-        <motion.button 
+        <motion.button aria-label="open navbar"
           initial={{ opacity:0 , x: 70 }}  animate={{opacity :1, x: 0 }} transition={{duration:0.5 , delay:0.85}}
           onClick={() => { setIsOpen(!isOpen);}} className="fixed bg-bg-color border-1 border-fourth-color rounded-full">
           <List size={50} className="p-3" />

@@ -1,6 +1,5 @@
 import { Person } from "react-bootstrap-icons";
 import codeSnippet from "../../assets/code-snippet.svg";
-import { RoughNotation } from "react-rough-notation";
 import myImage from '../../assets/my-image.jpg'
 import { motion, useInView } from "framer-motion"
 import NavTitle from "../animated/NavTitle";
@@ -34,9 +33,7 @@ export const AboutMeSection = () => {
                 alt=""
               />
             </div>
-            <RoughNotation animationDelay={1000} padding={[5, 0]} multiline type="highlight">
-              <h5 className="font-bold md:text-base sm:text-sm">Full-stack Developer</h5>
-            </RoughNotation>
+            <h2 className="font-bold md:text-base sm:text-sm">Full-stack Developer</h2>
             <div className="mt-6 mb-8 text-[#727171] md:text-lg sm:text-base sm:line-clamp-6 md:line-clamp-none">
               I am Hamza, a full-stack developer skilled in back-end (PHP/Laravel, SQL, MongoDB)
               and front-end (JavaScript, ReactJS, Redux). Experienced with CSS frameworks like Tailwind CSS,
