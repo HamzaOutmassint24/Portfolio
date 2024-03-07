@@ -7,7 +7,7 @@ export default function NavTitle({ children }) {
 
     return (
         <motion.div ref={ref}
-            className='flex items-center md:justify-center sm:justify-start cursor-grab z-50 transform ease-linear duration-300'
+            className='pt-8 flex items-center md:justify-center sm:justify-start cursor-grab z-50 transform ease-linear duration-300'
             drag
             dragConstraints={{
                 top: -2,

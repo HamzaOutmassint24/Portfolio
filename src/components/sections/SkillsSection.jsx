@@ -8,6 +8,7 @@ import { Draggable } from "gsap/Draggable";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NavTitle from "../animated/NavTitle";
+import Reveal from "../animated/Reveal";
 
 export const SkillsSection = () => {
   const [dragStatus, setDragStatus] = useState(null);
@@ -95,10 +96,11 @@ export const SkillsSection = () => {
           <span className="pr-5"> SKILLS </span>
         </div>
       </NavTitle>
-      <div className="relative mt-10 lg:mr-16">
+      <div className="relative lg:mr-16">
         <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16 z-0" />
-        <h1 className="font-second-font lg:text-5xl sm:text-xl">
-          <span>My</span> <br /><span className="text-main-color">Skillset</span>
+        <h1 className="font-second-font lg:text-5xl sm:text-xl md:mb-16">
+          <Reveal  RevealDelay={0.6} TextDelay={0.85}><span>My</span></Reveal>
+          <Reveal  RevealDelay={0.6} TextDelay={0.85}><span className="text-main-color">Skillset</span></Reveal>
         </h1>
 
         <div className="flex justify-center items-center mt-8">
@@ -118,7 +120,7 @@ export const SkillsSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute exactly-1024:top-[73%] lg:top-[68%] md:top-[70%] sm:top-[75%] lg:left-[33%] sm:left-[35%] w-[30%] flex flex-col items-center justify-center">
+      <div className="absolute exactly-1024:top-[73%] lg:top-[70%] md:top-[70%] sm:top-[75%] lg:left-[33%] sm:left-[35%] w-[30%] flex flex-col items-center justify-center">
         <span className="text-fifth-color font-second-font md:text-3xl sm:text-lg  font-bold "> {Skills[currentTitleIndex].title} </span>
       </div>
       <div ref={sphere} className='sphereWrapper xl:left-[38%] lg:left-[37%] exactly-1024:left-[39%] sm:left-[41%]'>

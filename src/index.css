@@ -150,7 +150,7 @@ body {
     /* background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, .5)); */
     filter: blur(3rem);
     border-radius: 50%;
-    bottom: -2rem;
+    bottom: 0rem;
     /* left: 21rem; */
 }
 

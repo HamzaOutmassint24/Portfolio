@@ -9,20 +9,9 @@ export const IntroduceSection = ({ scrollToSection }) => {
     <section className="xl:h-full lg:h-screen exactly-1024:h-fit sm:pt-20 lg:pt-9 " id="home">
       <div className="flex items-center md:justify-center sm:justify-start">
         <motion.div
-          drag
-          dragConstraints={{
-            top: -2,
-            left: -2,
-            right: 2,
-            bottom: 2,
-          }}
-          variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial='hidden'
-          animate={'visible'}
-          transition={{ duration: 0.5, }}
+          drag dragConstraints={{ top: -2, left: -2, right: 2, bottom: 2, }}
+          variants={{ hidden: { opacity: 0, y: 100 }, visible: { opacity: 1, y: 0 }, }}
+          initial='hidden' animate={'visible'} transition={{ duration: 0.5, }}
           className="border-1 border-fourth-color rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm md:w-md lg:w-lg xl:w-xl exactly-1024:w-sm flex justify-between">
           <HouseDoor size={18} />
           INTRODUCE
@@ -31,22 +20,22 @@ export const IntroduceSection = ({ scrollToSection }) => {
       <div className="sm:mt-12 mt-24 pb-5 grid grid-flow-row-dense lg:grid-cols-3 ">
         <div className="lg:col-span-2">
           <div className="text-[#28e98c] relative mb-4 helloWorld">
-            <Reveal color="#28e98c">
+            <Reveal RevealDelay={0.6} TextDelay={0.89}>
               <span className="pl-14 md:text-lg font-second-font tracking-wide">
                 HELLO WORLD
               </span>
             </Reveal>
           </div>
           <h1 className="font-main-font text-white sm:text-5xl md:text-5xl lg:text-5xl not-italic font-bold  mb-5 leading-[normal]">
-            <Reveal color="#28e98c">I am Hamza Outmassint, Full Stack Developer.</Reveal>
+            <Reveal RevealDelay={0.6} TextDelay={0.89}>I am Hamza Outmassint, Full Stack Developer.</Reveal>
           </h1>
           <span className="font-second-font text-fifth-color sm:text-sm md:text-base xl:pr-10">
-            <Reveal color="#28e98c"> Crafting code, painting pixels. Full stack, full passion. Let's build something beautiful together!</Reveal>
+            <Reveal RevealDelay={0.6} TextDelay={0.89}> Crafting code, painting pixels. Full stack, full passion. Let's build something beautiful together!</Reveal>
           </span>
           <div className="flex mt-4">
             <motion.a
               variants={{ hidden: { opacity: 0, x: -100 }, visible: { opacity: 1, x: 0 }, }}
-              initial='hidden' animate={'visible'} transition={{ duration: 0.5, delay: 0.85 }}
+              initial='hidden' animate={'visible'} transition={{ duration: 0.5, delay: 0.89 }}
               title="github" href="https://github.com/HamzaOutmassint"
               className="h-1/2 border-3 border-fourth-color p-2 rounded-full mr-4 group hover:border-main-color transition duration-200 ease-linear"
             >
@@ -58,7 +47,7 @@ export const IntroduceSection = ({ scrollToSection }) => {
 
             <motion.a
               variants={{ hidden: { opacity: 0, x: -100 }, visible: { opacity: 1, x: 0 }, }}
-              initial='hidden' animate={'visible'} transition={{ duration: 0.2, delay: 0.85 }}
+              initial='hidden' animate={'visible'} transition={{ duration: 0.2, delay: 0.89 }}
               title="linkdin" href="https://www.linkedin.com/in/hamza-outmassint/"
               className="h-1/2 border-3 border-fourth-color group hover:border-main-color p-2 rounded-full flex items-center justify-center transition duration-200 ease-linear"
             >
