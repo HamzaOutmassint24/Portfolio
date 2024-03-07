@@ -61,7 +61,7 @@ export const AboutMeSection = () => {
         href="/pdf/cv_outmassint_hamza.pdf" target="_blank" className="max-w-fit font-second-font self-center" rel="noreferrer">
         <button className="relative group p-3 px-12 bg-main-color transition-colors duration-300 rounded-full border-2 border-main-color">
           <div className="absolute top-3.5 left-3 h-5 w-5 bg-bg-color rounded-full group-hover:h-full group-hover:w-full group-hover:top-0 group-hover:left-0 transition-all duration-300 z-10"></div>
-          <span className="z-20 relative text-second-color group-hover:text-main-color font-bold">View Resume</span>
+          <span className="z-20 relative text-bg-color group-hover:text-main-color font-bold">View Resume</span>
         </button>
       </motion.a>
     </section>

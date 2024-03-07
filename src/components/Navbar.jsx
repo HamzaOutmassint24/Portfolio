@@ -13,7 +13,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
         <nav>
           <ul className="border-1 border-fourth-color rounded-full h-64 flex flex-col justify-between px-3 py-5">
             <li className="group flex relative">
-              <button onClick={() => scrollToSection("home")}>
+              <button onClick={() => scrollToSection("home")} aria-label="scroll to home section">
                 <HouseDoor size={21}
                   className={ activeSection === "home" ? "text-main-color" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
                 />
@@ -23,7 +23,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
               </button>
             </li>
             <li className="group flex relative">
-              <button onClick={() => scrollToSection("about-me-section")}>
+              <button onClick={() => scrollToSection("about-me-section")} aria-label="scroll to about section">
                 <Person size={23} 
                 className={ activeSection === "about-me-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
                 />
@@ -33,7 +33,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
               </button>
             </li>
             <li className="group flex relative">
-              <button onClick={() => scrollToSection("services-section")}>
+              <button onClick={() => scrollToSection("services-section")} aria-label="scroll to services section">
                 <MenuButton size={20}
                   className={ activeSection === "services-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
                 />
@@ -43,7 +43,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
               </button>
             </li>
             <li className="group flex relative">
-              <button onClick={() => scrollToSection("skills-section")}>
+              <button onClick={() => scrollToSection("skills-section")} aria-label="scroll to skills section">
                 <Diagram3 size={22}
                   className={ activeSection === "skills-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
                 />
@@ -53,7 +53,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
               </button>
             </li>
             <li className="group flex relative">
-              <button onClick={() => scrollToSection("project-section")}>
+              <button onClick={() => scrollToSection("project-section")} aria-label="scroll to project section">
                 <FileText size={21}
                   className={ activeSection === "project-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
                 />
@@ -63,7 +63,7 @@ export const Navbar = ({ activeSection, scrollToSection }) => {
               </button>
             </li>
             <li className="group flex relative">
-              <button onClick={() => scrollToSection("contact-section")}>
+              <button onClick={() => scrollToSection("contact-section")} aria-label="scroll to contact section">
                 <Envelope size={20}
                   className={ activeSection === "contact-section" ? "text-main-color transition duration-200 ease-linear" : "text-fourth-color hover:text-main-color transition duration-200 ease-linear"}
                 />
