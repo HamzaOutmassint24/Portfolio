@@ -11,7 +11,7 @@ export const ServicesSection = () => {
 
   return (
     <section className="xl:h-full lg:h-screen exactly-1024:h-fit pt-9 md:mb-48 sm:mb-28 relative" id="services-section">
-      <div className="blobs -left-56 top-64"></div>
+      <div className="blobs md:-left-56 md:top-64 sm:-left-12 sm:top-32"></div>
       <NavTitle>
         <div className="border-1 border-second-color items-center rounded-full text-sm p-1 px-4 font-second-font tracking-normal sm:w-sm  md:w-md lg:w-lg xl:w-xl flex justify-between">
           <MenuButton size={18} />
@@ -27,7 +27,7 @@ export const ServicesSection = () => {
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 60 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="flex justify-between border-1 border-fourth-color hover:border-main-color transition duration-200 ease-linear rounded-xl h-32 p-8 px-8 mb-6">
             <div className="flex flex-col justify-center">
               <span className="text-xl mb-1 font-normal">Development</span>
@@ -40,7 +40,7 @@ export const ServicesSection = () => {
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 60 }}
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             className="flex justify-between border-1 border-fourth-color hover:border-main-color transition duration-200 ease-linear rounded-xl h-32 p-8 px-8 ">
             <div className="flex flex-col justify-center">
               <span className="text-xl mb-1">Website design</span>

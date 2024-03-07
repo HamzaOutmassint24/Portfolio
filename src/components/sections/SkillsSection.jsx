@@ -98,11 +98,10 @@ export const SkillsSection = () => {
       </NavTitle>
       <div className="relative lg:mr-16">
         <img src={butterfly} alt="butterfly img" width={500} className="opacity-5 rotate-45 absolute lg:right-11 md:-right-14 sm:-right-16 z-0" />
-        <h1 className="font-second-font lg:text-5xl sm:text-xl md:mb-16">
+        <h1 className="font-second-font lg:text-5xl sm:text-xl md:mb-16 sm:mt-8">
           <Reveal  RevealDelay={0.6} TextDelay={0.85}><span>My</span></Reveal>
           <Reveal  RevealDelay={0.6} TextDelay={0.85}><span className="text-main-color">Skillset</span></Reveal>
         </h1>
-
         <div className="flex justify-center items-center mt-8">
           <div className='collisionDiv' ref={collisionDiv}></div>
           <div className="w-[40dvw] circularCarousel relative">

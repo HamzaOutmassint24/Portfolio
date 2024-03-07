@@ -27,7 +27,7 @@ export const AboutMeSection = () => {
             transition={{ duration: 1 }}
             className="absolute lg:w-[49%] md:w-[59%] sm:w-[86%] lg:h-[73%] bottom-32 font-second-font text-[black] card bg-[#fff] p-6 rounded-3xl -rotate-6 z-10 ">
             <div className="flex">
-              <h1 className="text-[red] font-bold text-lg">HAMZA OUTMASSINT</h1>
+              <h1 className="text-[red] font-bold md:text-lg">HAMZA OUTMASSINT</h1>
               <img
                 className="inline-block h-20 w-20 rounded-full ring-2 ring-white- absolute -right-8 rotate-6 z-10"
                 src={myImage}
@@ -35,9 +35,9 @@ export const AboutMeSection = () => {
               />
             </div>
             <RoughNotation animationDelay={1000} padding={[5, 0]} multiline type="highlight">
-              <h5 className="font-bold ">Full-stack Developer</h5>
+              <h5 className="font-bold md:text-base sm:text-sm">Full-stack Developer</h5>
             </RoughNotation>
-            <div className="mt-6 mb-8 text-[#727171] text-lg sm:line-clamp-6 md:line-clamp-none">
+            <div className="mt-6 mb-8 text-[#727171] md:text-lg sm:text-base sm:line-clamp-6 md:line-clamp-none">
               I am Hamza, a full-stack developer skilled in back-end (PHP/Laravel, SQL, MongoDB)
               and front-end (JavaScript, ReactJS, Redux). Experienced with CSS frameworks like Tailwind CSS,
               Bootstrap, and Sass for crafting dynamic, responsive designs. Passionate about building robust
@@ -45,7 +45,7 @@ export const AboutMeSection = () => {
             </div>
             <a
               href="mailto:outmassinthamza@gmail.com" target="_blank" rel="noreferrer"
-              className="z-40 relative text-[#727171] underline"
+              className="z-40 relative text-[#727171] underline md:text-base sm:text-sm"
             >
               outmassinthamza@gmail.com
             </a>
