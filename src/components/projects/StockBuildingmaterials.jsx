@@ -37,7 +37,7 @@ export default function StockBuildingmaterials({ handleModalToggle }) {
                     <Reveal RevealDelay={0.6} TextDelay={0.89}><li>Vite: A build tool used for front-end development with React</li></Reveal>
                     <Reveal RevealDelay={0.6} TextDelay={0.89}><li>Tailwind CSS: A utility-first CSS framework used for styling the application</li></Reveal>
                 </ul>
-                <a href="https://github.com/Abdellah-Idrissi/fashion_shop" target="_blank" rel="noreferrer" className="cta flex items-center gap-x-[3px] lg:gap-x-[5px] w-fit">
+                <a href="https://github.com/HamzaOutmassint/Stock-Building-materials-V2" target="_blank" rel="noreferrer" className="cta flex items-center gap-x-[3px] lg:gap-x-[5px] w-fit">
                     <span className=" font-clash font-semibold text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
                         Source Code
                     </span>

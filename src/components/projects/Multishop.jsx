@@ -41,7 +41,7 @@ export default function MultiShop({ handleModalToggle }) {
                     <Reveal RevealDelay={0.6} TextDelay={0.89}><li>CSS: is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML</li></Reveal>
                     <Reveal RevealDelay={0.6} TextDelay={0.89}><li>Material UI: is an open-source React component library that implements Google's Material Design.</li></Reveal>
                 </ul>
-                <a href="https://github.com/Abdellah-Idrissi/fashion_shop" target="_blank" className="cta flex items-center gap-x-[3px] lg:gap-x-[5px] w-fit" rel="noreferrer">
+                <a href="https://github.com/HamzaOutmassint/MultiShop" target="_blank" className="cta flex items-center gap-x-[3px] lg:gap-x-[5px] w-fit" rel="noreferrer">
                     <span className=" font-clash font-semibold text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
                         Source Code
                     </span>
