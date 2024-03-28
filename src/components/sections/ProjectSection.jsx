@@ -1,6 +1,6 @@
 import { MenuButton } from 'react-bootstrap-icons';
 import Project1Img1 from '../../assets/project images/project-img1.png';
-import Project2Img1 from '../../assets/project images/project2-img1.jpeg';
+import Project2Img1 from '../../assets/project images/project2-img1.png';
 import { Github } from "react-bootstrap-icons";
 import NavTitle from '../animated/NavTitle';
 import { motion, useInView } from 'framer-motion'
