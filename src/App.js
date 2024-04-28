@@ -40,7 +40,6 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

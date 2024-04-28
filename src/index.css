@@ -104,6 +104,11 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#8DE9D5", endColorstr="#32C4C0", GradientType=1);
 }
 
+.project-cart3 {
+    background: rgb(18,179,235);
+    background: linear-gradient(90deg, rgba(18,179,235,1) 0%, rgba(17,211,243,1) 100%);
+}
+
 .cta {
     position: relative;
     padding: 12px 20px;
@@ -154,7 +159,7 @@ body {
     /* left: 21rem; */
 }
 
-.card{
+.card {
     background-image: url("assets/spiral.svg");
     background-position: 50% 0;
     background-size: cover;

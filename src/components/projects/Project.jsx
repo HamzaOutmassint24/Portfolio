@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import StockBuildingmaterials from './StockBuildingmaterials';
+import StockBuildingMaterials from './StockBuildingMaterials';
 import MultiShop from './Multishop';
+import CommonShare from './CommonShare'
 
 const Project = ({ isModalOpen, handleModalToggle ,ProjectName}) => {
     useEffect(()=>{
@@ -9,10 +10,12 @@ const Project = ({ isModalOpen, handleModalToggle ,ProjectName}) => {
 
     if (isModalOpen) {
         if(ProjectName === 'Stock-Building-materials'){
-             return <StockBuildingmaterials handleModalToggle={handleModalToggle} />
+             return <StockBuildingMaterials handleModalToggle={handleModalToggle} />
         }
         else if(ProjectName === 'Multishop'){
             return <MultiShop handleModalToggle={handleModalToggle} />
+        }else if(ProjectName === 'CommonShare'){
+            return <CommonShare handleModalToggle={handleModalToggle} />
         }
     }
 }
