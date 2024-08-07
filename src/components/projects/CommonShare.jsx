@@ -10,7 +10,7 @@ import Project1Img5 from '../../assets/project images/project3-img5.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import Reveal from '../animated/Reveal';
 
-export default function CommonShare({ handleModalToggle }) {
+function CommonShare({ handleModalToggle }) {
     return (
         <div className="bg-bg-color h-screen md:pl-20 sm:pl-5 font-second-font " id='modal-section'>
             <button onClick={handleModalToggle} className='float-right mt-3 mr-4'>
@@ -70,3 +70,5 @@ export default function CommonShare({ handleModalToggle }) {
         </div>
     )
 }
+
+export default CommonShare

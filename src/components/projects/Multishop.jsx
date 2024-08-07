@@ -13,7 +13,7 @@ import Project2Img8 from '../../assets/project images/project2-img8.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import Reveal from '../animated/Reveal';
 
-export default function MultiShop({ handleModalToggle }) {
+function MultiShop({ handleModalToggle }) {
     return (
         <div className="bg-bg-color h-screen md:pl-20 sm:pl-5 font-second-font " id='modal-section'>
             <button onClick={handleModalToggle} className='float-right mt-3 mr-4'>
@@ -79,3 +79,5 @@ export default function MultiShop({ handleModalToggle }) {
         </div>
     )
 }
+
+export default MultiShop

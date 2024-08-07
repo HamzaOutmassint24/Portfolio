@@ -9,7 +9,7 @@ import Project1Img4 from '../../assets/project images/project-img4.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import Reveal from '../animated/Reveal';
 
-export default function StockBuildingMaterials({ handleModalToggle }) {
+function StockBuildingMaterials({ handleModalToggle }) {
     return (
         <div className="bg-bg-color h-screen md:pl-20 sm:pl-5 font-second-font " id='modal-section'>
             <button onClick={handleModalToggle} className='float-right mt-3 mr-4'>
@@ -70,3 +70,5 @@ export default function StockBuildingMaterials({ handleModalToggle }) {
         </div>
     )
 }
+
+export default StockBuildingMaterials
