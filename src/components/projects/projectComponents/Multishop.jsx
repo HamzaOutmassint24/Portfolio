@@ -11,7 +11,7 @@ import Project2Img6 from '../../assets/project images/project2-img6.png';
 import Project2Img7 from '../../assets/project images/project2-img7.png';
 import Project2Img8 from '../../assets/project images/project2-img8.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
-import Reveal from '../animated/Reveal';
+import Reveal from '../../animated/Reveal';
 
 function MultiShop({ handleModalToggle }) {
     return (

@@ -8,7 +8,7 @@ import Project1Img3 from '../../assets/project images/project3-img3.png';
 import Project1Img4 from '../../assets/project images/project3-img4.png';
 import Project1Img5 from '../../assets/project images/project3-img5.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
-import Reveal from '../animated/Reveal';
+import Reveal from '../../animated/Reveal';
 
 function CommonShare({ handleModalToggle }) {
     return (

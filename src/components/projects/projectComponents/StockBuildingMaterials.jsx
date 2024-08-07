@@ -7,7 +7,7 @@ import Project1Img2 from '../../assets/project images/project-img2.png';
 import Project1Img3 from '../../assets/project images/project-img3.png';
 import Project1Img4 from '../../assets/project images/project-img4.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
-import Reveal from '../animated/Reveal';
+import Reveal from '../../animated/Reveal';
 
 function StockBuildingMaterials({ handleModalToggle }) {
     return (

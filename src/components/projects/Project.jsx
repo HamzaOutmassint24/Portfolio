@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import StockBuildingMaterials from './StockBuildingMaterials';
-import MultiShop from './Multishop';
-import CommonShare from './CommonShare'
+import StockBuildingMaterials from './projectComponents/StockBuildingMaterials';
+import MultiShop from './projectComponents/Multishop';
+import CommonShare from './projectComponents/CommonShare'
 
 const Project = ({ isModalOpen, handleModalToggle ,ProjectName}) => {
     useEffect(()=>{
