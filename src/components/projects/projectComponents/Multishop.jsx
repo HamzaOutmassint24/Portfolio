@@ -2,14 +2,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Project2Img1 from '../../assets/project images/project2-img1.png';
-import Project2Img2 from '../../assets/project images/project2-img2.png';
-import Project2Img3 from '../../assets/project images/project2-img3.png';
-import Project2Img4 from '../../assets/project images/project2-img4.png';
-import Project2Img5 from '../../assets/project images/project2-img5.png';
-import Project2Img6 from '../../assets/project images/project2-img6.png';
-import Project2Img7 from '../../assets/project images/project2-img7.png';
-import Project2Img8 from '../../assets/project images/project2-img8.png';
+import Project2Img1 from '../../../assets/project images/project2-img1.png';
+import Project2Img2 from '../../../assets/project images/project2-img2.png';
+import Project2Img3 from '../../../assets/project images/project2-img3.png';
+import Project2Img4 from '../../../assets/project images/project2-img4.png';
+import Project2Img5 from '../../../assets/project images/project2-img5.png';
+import Project2Img6 from '../../../assets/project images/project2-img6.png';
+import Project2Img7 from '../../../assets/project images/project2-img7.png';
+import Project2Img8 from '../../../assets/project images/project2-img8.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import Reveal from '../../animated/Reveal';
 
@@ -49,7 +49,13 @@ function MultiShop({ handleModalToggle }) {
                 </a>
             </div>
             <div className='md:mr-20 mr-4 mt-14 pb-10'>
-                <Swiper spaceBetween={30} pagination={{ clickable: true, }} modules={[Pagination]} className="mySwiper">
+                <Swiper  
+                    cssMode={true} 
+                    spaceBetween={30} 
+                    pagination={{ clickable: true, }} 
+                    modules={[Pagination]} 
+                    className="mySwiper"
+                >
                     <SwiperSlide>
                         <img src={Project2Img1} alt="projectImage" className="rounded-md " />
                     </SwiperSlide>

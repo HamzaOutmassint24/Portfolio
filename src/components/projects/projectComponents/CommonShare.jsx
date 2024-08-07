@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Project1Img1 from '../../assets/project images/project3-img1.png';
-import Project1Img2 from '../../assets/project images/project3-img2.png';
-import Project1Img3 from '../../assets/project images/project3-img3.png';
-import Project1Img4 from '../../assets/project images/project3-img4.png';
-import Project1Img5 from '../../assets/project images/project3-img5.png';
+import Project1Img1 from '../../../assets/project images/project3-img1.png';
+import Project1Img2 from '../../../assets/project images/project3-img2.png';
+import Project1Img3 from '../../../assets/project images/project3-img3.png';
+import Project1Img4 from '../../../assets/project images/project3-img4.png';
+import Project1Img5 from '../../../assets/project images/project3-img5.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import Reveal from '../../animated/Reveal';
 
@@ -43,6 +43,7 @@ function CommonShare({ handleModalToggle }) {
             </div>
             <div className='md:mr-20 mr-4 mt-14 pb-10'>
                 <Swiper
+                    cssMode={true}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,

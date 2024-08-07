@@ -47,6 +47,14 @@ body {
     border-radius: 50%;
 }
 
+.right-blobs-project-component{
+    bottom: -186px !important;
+}
+.left-blobs-project-component{
+    top: 600px;
+    left: -12rem;
+}
+
 /* 
     ### introduc section style ###
 */
@@ -210,6 +218,7 @@ body {
     scale: none;
     transform-origin: 50% 50%;
     transform: translate(336px, -909.681px);
+    transition: all ease-in-out .3s;
 }
 
 .box img {

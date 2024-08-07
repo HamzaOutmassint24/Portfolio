@@ -2,16 +2,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Project1Img1 from '../../assets/project images/project-img1.png';
-import Project1Img2 from '../../assets/project images/project-img2.png';
-import Project1Img3 from '../../assets/project images/project-img3.png';
-import Project1Img4 from '../../assets/project images/project-img4.png';
+import Project1Img1 from '../../../assets/project images/project-img1.png';
+import Project1Img2 from '../../../assets/project images/project-img2.png';
+import Project1Img3 from '../../../assets/project images/project-img3.png';
+import Project1Img4 from '../../../assets/project images/project-img4.png';
 import { XSquare, ArrowRightCircleFill } from 'react-bootstrap-icons';
 import Reveal from '../../animated/Reveal';
 
 function StockBuildingMaterials({ handleModalToggle }) {
     return (
         <div className="bg-bg-color h-screen md:pl-20 sm:pl-5 font-second-font " id='modal-section'>
+            <div className="blobs right-blobs-project-component right-20"></div>
+            <div className="blobs left-blobs-project-component md:-left-56 md:top-64 sm:-left-12 sm:top-32"></div>
             <button onClick={handleModalToggle} className='float-right mt-3 mr-4'>
                 <XSquare size={18} />
             </button>
@@ -46,6 +48,7 @@ function StockBuildingMaterials({ handleModalToggle }) {
             </div>
             <div className='md:mr-20 mr-4 mt-14 pb-10'>
                 <Swiper
+                    cssMode={true}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,

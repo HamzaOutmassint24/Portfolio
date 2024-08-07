@@ -61,6 +61,10 @@ module.exports = {
       height:{
         "70%":"70%",
       },
+      animation: {
+        'spin-slow': 'spin 40s linear infinite',
+        'spin-stop': 'spin 1000s linear infinite',
+      }
     },
     screens: {
       sm: "359px",

@@ -49,37 +49,37 @@ export const SkillsSection = () => {
 
     // Draggable
     setActiveIndex(0);
-    Draggable.create(`.circularCarousel`, {
-      type: "rotation",
-      inertia: true,
-      snap: (endVal) => gsap.utils.snap(360 / boxes.length, endVal),
-      onPress: () => {
-        setDragStatus('pressed');
-      },
-      onRelease: () => {
-        setDragStatus(null);
-      },
-      onDragStart: () => {
-        setActiveIndex(null);
-      },
-      onThrowComplete: () => {
-        let collisionDivRect = collisionDiv.current?.getBoundingClientRect();
-        let newActiveIndex = null;
+    // Draggable.create(`.circularCarousel`, {
+    //   type: "rotation",
+    //   inertia: true,
+    //   snap: (endVal) => gsap.utils.snap(360 / boxes.length, endVal),
+    //   onPress: () => {
+    //     setDragStatus('pressed');
+    //   },
+    //   onRelease: () => {
+    //     setDragStatus(null);
+    //   },
+    //   onDragStart: () => {
+    //     setActiveIndex(null);
+    //   },
+    //   onThrowComplete: () => {
+    //     let collisionDivRect = collisionDiv.current?.getBoundingClientRect();
+    //     let newActiveIndex = null;
 
-        boxes.forEach((box, index) => {
-          let boxRect = box.getBoundingClientRect();
-          if (
-            collisionDivRect.x < boxRect.x + boxRect.width &&
-            collisionDivRect.x + collisionDivRect.width > boxRect.x &&
-            collisionDivRect.y < boxRect.y + boxRect.height &&
-            collisionDivRect.y + collisionDivRect.height > boxRect.y
-          ) {
-            newActiveIndex = index;
-          }
-        });
-        setActiveIndex(newActiveIndex);
-      },
-    });
+    //     boxes.forEach((box, index) => {
+    //       let boxRect = box.getBoundingClientRect();
+    //       if (
+    //         collisionDivRect.x < boxRect.x + boxRect.width &&
+    //         collisionDivRect.x + collisionDivRect.width > boxRect.x &&
+    //         collisionDivRect.y < boxRect.y + boxRect.height &&
+    //         collisionDivRect.y + collisionDivRect.height > boxRect.y
+    //       ) {
+    //         newActiveIndex = index;
+    //       }
+    //     });
+    //     setActiveIndex(newActiveIndex);
+    //   },
+    // });
 
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -104,15 +104,15 @@ export const SkillsSection = () => {
         </h1>
         <div className="flex justify-center items-center mt-8">
           <div className='collisionDiv' ref={collisionDiv}></div>
-          <div className="w-[40dvw] circularCarousel relative">
+          <div className="w-[40dvw] circularCarousel relative animate-spin-slow">
             <svg viewBox="0 0 400 400" className="visible h-full w-full pointer-events-none">
               <path strokeWidth="2" stroke="red" id="circularCarouselPath" fill="none"
                 d="M396,200 C396,308.24781 308.24781,396 200,396 91.75219,396 4,308.24781 4,200 4,91.75219 91.75219,4 200,4 308.24781,4 396,91.75219 396,200 z"></path>
             </svg>
 
             {Skills.map((skill, index) => (
-              <div key={index}
-                className={`box flex  justify-center items-center rounded-2xl ${activeIndex === index ? 'isActive' : ''}`}>
+              <div key={index} 
+                className={`box flex justify-center items-center rounded-2xl ${activeIndex === index ? 'isActive' : ''}`}>
                 <img src={require(`../../assets/icons/${skill.image}`)} alt={skill.title} width={100} height={100} loading={'lazy'} />
               </div>
             ))}
